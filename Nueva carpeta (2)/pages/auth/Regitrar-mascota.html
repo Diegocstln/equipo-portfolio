@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crear cuenta — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="card" role="region" aria-labelledby="reg-title">
+      <header class="brand">
+        <i class="brand__logo" aria-hidden="true"></i>
+        <span class="brand__name">VetCare</span>
+        <span class="badge" style="margin-left:auto">Registro</span>
+      </header>
+
+      <!-- <div class="alert alert--error" role="alert">El correo ya está registrado.</div> -->
+      <!-- <div class="alert alert--success" role="alert">¡Revisa tu correo para verificar la cuenta!</div> -->
+
+      <h1 class="h" id="reg-title">Ingresa los datos de tu mascota</h1>
+
+      <form class="form" method="post" action="/auth/register">
+        <div>
+          <label class="label" for="name">Nombre</label>
+          <input class="input" id="name" name="name" type="text" autocomplete="name"
+                 placeholder="María López" required />
+        </div>
+
+        <div>
+          <label class="label" for="email">Especie</label>
+            <select id="mascota" name="mascota">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="conejo">Reptil</option>
+            <option value="hamster">Ave</option>
+            </select>
+        </div>
+
+        <div>
+          <label class="label" for="phone">Raza</label>
+          <select id="mascota" name="mascota">
+            <option value="akita_inu">Akita Inu</option>
+            <option value="pastor_aleman">Pastor Alemán</option>
+            <option value="labrador_retriever">Labrador Retriever</option>
+            <option value="bulldog_frances">Bulldog Francés</option>
+            <option value="pug">Pug</option>
+            <option value="chihuahua">Chihuahua</option>
+            <option value="dalmata">Dálmata</option>
+            <option value="husky_siberiano">Husky Siberiano</option>
+            <option value="rottweiler">Rottweiler</option>
+            <option value="dobermann">Dobermann</option>
+            <option value="golden_retriever">Golden Retriever</option>
+            <option value="pastor_belga">Pastor Belga</option>
+            <option value="yorkshire_terrier">Yorkshire Terrier</option>
+            <option value="shih_tzu">Shih Tzu</option>
+            <option value="caniche">Caniche</option>
+            <option value="samoyedo">Samoyedo</option>
+            <option value="beagle">Beagle</option>
+            <option value="border_collie">Border Collie</option>
+            <option value="san_bernardo">San Bernardo</option>
+            <option value="mastin_napolitano">Mastín Napolitano</option>
+            </select>
+        </div>
+
+        <div>
+          <label class="label" for="password">Sexo</label>
+                <label>
+                <input type="radio" name="recordatorios" id="rec-sí" value="si" checked>
+                M
+                </label>
+                
+                <label>
+                <input type="radio" name="recordatorios" id="rec-no" value="no">
+                F
+                </label>
+
+        </div>
+
+        <div>
+          <label class="label" for="password2">Edad</label>
+          <input class="input" id="password2" name="password_confirmation" type="password"
+                 autocomplete="new-password" placeholder="14 años" required />
+        </div>
+
+        <div>
+          <label class="label" for="password2">Cuidados Especiales</label>
+          <input class="input" id="password2" name="password_confirmation" type="password"
+                 autocomplete="new-password" required />
+        </div>
+
+        <div>
+          <label class="label" for="password">¿Tu mascota esta esterilizada?</label>
+                <label>
+                <input type="radio" name="recordatorios" id="rec-sí" value="si" checked>
+                Si
+                </label>
+                
+                <label>
+                <input type="radio" name="recordatorios" id="rec-no" value="no">
+                No
+                </label>
+
+        </div>
+        <button class="btn btn--primary" type="submit">Crear cuenta</button>
+      </form>
+
+      <div class="divider"></div>
+      <p class="footer">¿Ya tienes cuenta? <a href="./login.html">Inicia sesión</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
