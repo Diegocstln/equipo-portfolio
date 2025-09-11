@@ -21,25 +21,26 @@
       <h1 class="h" id="reg-title">Ingresa los datos de tu mascota</h1>
 
       <form class="form" method="post" action="/auth/register">
+
         <div>
-          <label class="label" for="name">Nombre</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
+          <label class="label" for="nombre">Nombre</label>
+          <input class="input" id="nombre" name="nombre" type="text" 
                  placeholder="María López" required />
         </div>
 
         <div>
-          <label class="label" for="email">Especie</label>
-            <select id="mascota" name="mascota">
+          <label class="label" for="especie">Especie</label>
+          <select id="especie" name="especie" required>
             <option value="perro">Perro</option>
             <option value="gato">Gato</option>
-            <option value="conejo">Reptil</option>
-            <option value="hamster">Ave</option>
-            </select>
+            <option value="reptil">Reptil</option>
+            <option value="ave">Ave</option>
+          </select>
         </div>
 
         <div>
-          <label class="label" for="phone">Raza</label>
-          <select id="mascota" name="mascota">
+          <label class="label" for="raza">Raza</label>
+          <select id="raza" name="raza" required>
             <option value="akita_inu">Akita Inu</option>
             <option value="pastor_aleman">Pastor Alemán</option>
             <option value="labrador_retriever">Labrador Retriever</option>
@@ -60,84 +61,76 @@
             <option value="border_collie">Border Collie</option>
             <option value="san_bernardo">San Bernardo</option>
             <option value="mastin_napolitano">Mastín Napolitano</option>
-            </select>
+          </select>
         </div>
 
         <div>
-          <label class="label" for="password">Sexo</label>
-                <label>
-                <input type="radio" name="recordatorios" id="rec-sí" value="si" checked>
-                M
-                </label>
-                
-                <label>
-                <input type="radio" name="recordatorios" id="rec-no" value="no">
-                F
-                </label>
-
+          <label class="label">Sexo</label>
+          <label>
+            <input type="radio" name="sexo" value="M" checked> M
+          </label>
+          <label>
+            <input type="radio" name="sexo" value="F"> F
+          </label>
         </div>
 
         <div>
-          <label class="label" for="password2">Edad</label>
-          <input class="input2" id="password2" name="password_confirmation" type="password"
-                 autocomplette="new-password" placeholder="14 " required /><a>años</a>
+          <label class="label" for="edad">Edad</label>
+          <input class="input2" id="edad" name="edad" type="number" min="0" 
+                 placeholder="14" required /> <span>años</span>
         </div>
 
         <div>
-          <label class="label" for="password2">Cuidados Especiales</label>
-          <input class="input" id="password2" name="password_confirmation" type="password"
-                 autocomplete="new-password" required />
+          <label class="label" for="cuidados">Cuidados Especiales</label>
+          <input class="input" id="cuidados" name="cuidados" type="text" />
         </div>
 
         <div>
-                <label class="label" for="password">¿Tu mascota esta esterilizada?</label>
-                <label>
-                <input type="radio" name="recordatorios" id="rec-sí" value="si" checked>
-                Si
-                </label>
-                
-                <label>
-                <input type="radio" name="recordatorios" id="rec-no" value="no">
-                No
-                </label>
-
+          <label class="label">¿Tu mascota está esterilizada?</label>
+          <label>
+            <input type="radio" name="esterilizado" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No
+          </label>
         </div>
 
         <div>
-          <label class="label" for="Largo">Largo</label>
-          <input class="input2" id="Largo" name="Largo" type="Largo"
-                     placeholder="80" required /><a>cm</a>
+          <label class="label" for="largo">Largo</label>
+          <input class="input2" id="largo" name="largo" type="number" min="0"
+                 placeholder="80" required /> <span>cm</span>
         </div>
 
         <div>
-          <label class="label" for="Peso">Peso</label>
-          <input class="input2" id="Peso" name="Peso" type="Peso"
-                     placeholder="65" required /><a>kg</a>
+          <label class="label" for="peso">Peso</label>
+          <input class="input2" id="peso" name="peso" type="number" min="0"
+                 placeholder="65" required /> <span>kg</span>
         </div>
 
         <div>
-          <label class="label" for="Color">Color</label>
-            <select id="Color" name="Color">
-            <option value="Negro">Negro</option>
-            <option value="Blanco">Blanco</option>
-            <option value="Marron">Marron</option>
-            <option value="Gris">Gris</option>
-            <option value="Rojo">Rojo</option>
-            <option value="Amarillo">Amarillo</option>
-            </select>
+          <label class="label" for="color">Color</label>
+          <select id="color" name="color" required>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+            <option value="marron">Marrón</option>
+            <option value="gris">Gris</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+          </select>
         </div>
 
         <div>
-          <label class="label" for="email">Patron de color</label>
-            <select id="mascota" name="mascota">
-            <option value="Atigrado">Atigrado (Un patrón de rayas o bandas de color)</option>
-            <option value="Merle">Merle (Manchas irregulares de color más claro sobre un fondo más oscuro)</option>
-            <option value="Arlequin">Arlequín (Un patrón de manchas negras grandes sobre un fondo blanco)</option>
-            <option value="hamster">Gris</option>
-            <option value="hamster">Rojo</option>
-            <option value="hamster">Amarillo</option>
-            </select>
+          <label class="label" for="patron_color">Patrón de color</label>
+          <select id="patron_color" name="patron_color">
+            <option value="atigrado">Atigrado (rayas o bandas de color)</option>
+            <option value="merle">Merle (manchas irregulares sobre fondo oscuro)</option>
+            <option value="arlequin">Arlequín (manchas negras sobre fondo blanco)</option>
+            <option value="gris">Gris</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+          </select>
         </div>
+
         <button class="btn btn--primary" type="submit">Siguiente</button>
         <div class="divider"></div>
       </form>
