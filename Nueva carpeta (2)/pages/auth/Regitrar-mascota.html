@@ -79,8 +79,8 @@
 
         <div>
           <label class="label" for="password2">Edad</label>
-          <input class="input" id="password2" name="password_confirmation" type="password"
-                 autocomplete="new-password" placeholder="14 años" required />
+          <input class="input2" id="password2" name="password_confirmation" type="password"
+                 autocomplette="new-password" placeholder="14 " required /><a>años</a>
         </div>
 
         <div>
@@ -90,7 +90,7 @@
         </div>
 
         <div>
-          <label class="label" for="password">¿Tu mascota esta esterilizada?</label>
+                <label class="label" for="password">¿Tu mascota esta esterilizada?</label>
                 <label>
                 <input type="radio" name="recordatorios" id="rec-sí" value="si" checked>
                 Si
@@ -102,11 +102,45 @@
                 </label>
 
         </div>
-        <button class="btn btn--primary" type="submit">Crear cuenta</button>
-      </form>
 
-      <div class="divider"></div>
-      <p class="footer">¿Ya tienes cuenta? <a href="./login.html">Inicia sesión</a>.</p>
+        <div>
+          <label class="label" for="Largo">Largo</label>
+          <input class="input2" id="Largo" name="Largo" type="Largo"
+                     placeholder="80" required /><a>cm</a>
+        </div>
+
+        <div>
+          <label class="label" for="Peso">Peso</label>
+          <input class="input2" id="Peso" name="Peso" type="Peso"
+                     placeholder="65" required /><a>kg</a>
+        </div>
+
+        <div>
+          <label class="label" for="Color">Color</label>
+            <select id="Color" name="Color">
+            <option value="Negro">Negro</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Marron">Marron</option>
+            <option value="Gris">Gris</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Amarillo">Amarillo</option>
+            </select>
+        </div>
+
+        <div>
+          <label class="label" for="email">Patron de color</label>
+            <select id="mascota" name="mascota">
+            <option value="Atigrado">Atigrado (Un patrón de rayas o bandas de color)</option>
+            <option value="Merle">Merle (Manchas irregulares de color más claro sobre un fondo más oscuro)</option>
+            <option value="Arlequin">Arlequín (Un patrón de manchas negras grandes sobre un fondo blanco)</option>
+            <option value="hamster">Gris</option>
+            <option value="hamster">Rojo</option>
+            <option value="hamster">Amarillo</option>
+            </select>
+        </div>
+        <button class="btn btn--primary" type="submit">Siguiente</button>
+        <div class="divider"></div>
+      </form>
     </section>
   </main>
 </body>
