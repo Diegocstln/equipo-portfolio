@@ -101,3 +101,10 @@
     /* Footer */
     footer{ border-top: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 90%, transparent); color: var(--text-2); padding: 22px 0; }
     footer .foot{ display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+ .dashboard{max-width:960px;margin:40px auto;padding:20px;border:1px solid var(--border);border-radius:var(--radius);background:linear-gradient(180deg,var(--card),var(--card-2));box-shadow:var(--shadow)}
+    .dashboard h1{margin-top:0}
+    .grid{display:grid;gap:16px}
+    @media (min-width:880px){.grid{grid-template-columns:1.2fr .8fr}}
+    .card{padding:16px;border:1px solid var(--border);border-radius:var(--radius-sm);background:#0d1526}
+    .list{margin:0;padding-left:18px}
+    .row{display:grid;gap:12px}
