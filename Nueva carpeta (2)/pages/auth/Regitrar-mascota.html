@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crear cuenta — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="card" role="region" aria-labelledby="reg-title">
+      <header class="brand">
+        <i class="brand__logo" aria-hidden="true"></i>
+        <span class="brand__name">VetCare</span>
+        <span class="badge" style="margin-left:auto">Registro</span>
+      </header>
+
+      <!-- <div class="alert alert--error" role="alert">El correo ya está registrado.</div> -->
+      <!-- <div class="alert alert--success" role="alert">¡Revisa tu correo para verificar la cuenta!</div> -->
+
+      <h1 class="h" id="reg-title">Ingresa los datos de tu mascota</h1>
+
+      <form class="form" method="post" action="/auth/register">
+
+        <div>
+          <label class="label" for="nombre">Nombre</label>
+          <input class="input" id="nombre" name="nombre" type="text" 
+                 placeholder="María López" required />
+        </div>
+
+        <div>
+          <label class="label" for="especie">Especie</label>
+          <select id="especie" name="especie" required>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="reptil">Reptil</option>
+            <option value="ave">Ave</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label" for="raza">Raza</label>
+          <select id="raza" name="raza" required>
+            <option value="akita_inu">Akita Inu</option>
+            <option value="pastor_aleman">Pastor Alemán</option>
+            <option value="labrador_retriever">Labrador Retriever</option>
+            <option value="bulldog_frances">Bulldog Francés</option>
+            <option value="pug">Pug</option>
+            <option value="chihuahua">Chihuahua</option>
+            <option value="dalmata">Dálmata</option>
+            <option value="husky_siberiano">Husky Siberiano</option>
+            <option value="rottweiler">Rottweiler</option>
+            <option value="dobermann">Dobermann</option>
+            <option value="golden_retriever">Golden Retriever</option>
+            <option value="pastor_belga">Pastor Belga</option>
+            <option value="yorkshire_terrier">Yorkshire Terrier</option>
+            <option value="shih_tzu">Shih Tzu</option>
+            <option value="caniche">Caniche</option>
+            <option value="samoyedo">Samoyedo</option>
+            <option value="beagle">Beagle</option>
+            <option value="border_collie">Border Collie</option>
+            <option value="san_bernardo">San Bernardo</option>
+            <option value="mastin_napolitano">Mastín Napolitano</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label">Sexo</label>
+          <label>
+            <input type="radio" name="sexo" value="M" checked> M
+          </label>
+          <label>
+            <input type="radio" name="sexo" value="F"> F
+          </label>
+        </div>
+
+        <div>
+          <label class="label" for="edad">Edad</label>
+          <input class="input2" id="edad" name="edad" type="number" min="0" 
+                 placeholder="14" required /> <span>años</span>
+        </div>
+
+        <div>
+          <label class="label" for="cuidados">Cuidados Especiales</label>
+          <input class="input" id="cuidados" name="cuidados" type="text" />
+        </div>
+
+        <div>
+          <label class="label">¿Tu mascota está esterilizada?</label>
+          <label>
+            <input type="radio" name="esterilizado" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No
+          </label>
+        </div>
+
+        <div>
+          <label class="label" for="largo">Largo</label>
+          <input class="input2" id="largo" name="largo" type="number" min="0"
+                 placeholder="80" required /> <span>cm</span>
+        </div>
+
+        <div>
+          <label class="label" for="peso">Peso</label>
+          <input class="input2" id="peso" name="peso" type="number" min="0"
+                 placeholder="65" required /> <span>kg</span>
+        </div>
+
+        <div>
+          <label class="label" for="color">Color</label>
+          <select id="color" name="color" required>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+            <option value="marron">Marrón</option>
+            <option value="gris">Gris</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label" for="patron_color">Patrón de color</label>
+          <select id="patron_color" name="patron_color">
+            <option value="atigrado">Atigrado (rayas o bandas de color)</option>
+            <option value="merle">Merle (manchas irregulares sobre fondo oscuro)</option>
+            <option value="arlequin">Arlequín (manchas negras sobre fondo blanco)</option>
+            <option value="gris">Gris</option>
+            <option value="rojo">Rojo</option>
+            <option value="amarillo">Amarillo</option>
+          </select>
+        </div>
+
+        <button class="btn btn--primary" type="submit">Siguiente</button>
+        <div class="divider"></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

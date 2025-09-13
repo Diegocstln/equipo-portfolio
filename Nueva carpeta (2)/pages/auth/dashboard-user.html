@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel de usuario — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+  <style>
+    .dashboard {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, var(--card), var(--card-2));
+      box-shadow: var(--shadow);
+    }
+    .dashboard h1 { margin-top: 0; }
+    .cards { display: grid; gap: 16px; margin-top: 20px; }
+    .card {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: #0d1526;
+    }
+  </style>
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="dashboard">
+      <h1>👨‍⚕️ Mis mascotas</h1>
+      <div class="cards">
+        <div class="card">
+          <ul>
+            <li>Max (Perro) 
+                <br>Ultima cita: 22 de septiembre de 2025
+                <br>Diagnostico: Gripe
+                <br>Tratamiento: Reposo e hidratacion.
+            </li>
+            <li>Max (Perro) 
+                <br>Ultima cita: 22 de septiembre de 2025
+                <br>Diagnostico: Gripe
+                <br>Tratamiento: Reposo e hidratacion.
+            </li>
+            <li>16:00 — Rocky (Perro) — Vacunación</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Mensajes</h2>
+          <p>No tienes mensajes nuevos.</p>
+        </div>
+
+        <div class="card">
+          <h2>Acciones rápidas</h2>
+          <button class="btn btn--primary">Resgistrar mascota</button>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;text-align:center">
+      <a href="../../pages/auth/login.html" class="btn btn--link">Cerrar sesión</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
