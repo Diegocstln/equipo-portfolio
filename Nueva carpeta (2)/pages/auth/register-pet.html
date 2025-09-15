@@ -113,14 +113,9 @@
         </div>
 
         <div>
-          <label class="label2" for="edad">Edad</label>
-          <input class="input2" id="edad" name="edad" type="number" min="0" 
-                 placeholder="14" required /> <span>años</span>
-        </div>
-
-        <div>
-          <label class="label2" for="cuidados">Cuidados Especiales</label>
-          <input class="input" id="cuidados" name="cuidados" type="text" />
+          <label class="label2" for="Date">Fecha de nacimiento</label>
+          <input class="input2" id="Date" name="Date" type="text"  
+                 placeholder="01/01/01" required />
         </div>
 
         <div>
@@ -130,6 +125,9 @@
           </label>
           <label>
             <input type="radio" name="esterilizado" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No sé
           </label>
         </div>
 
@@ -144,6 +142,8 @@
           <input class="input2" id="peso" name="peso" type="number" min="0"
                  placeholder="65" required /> <span>kg</span>
         </div>
+
+        <span>Pelaje</span>
 
         <div>
           <label class="label2" for="color">Color</label>
@@ -167,6 +167,41 @@
             <option value="rojo">Rojo</option>
             <option value="amarillo">Amarillo</option>
           </select>
+        </div>
+
+        <div>
+          <label class="label2" for="Long">Largura del pelo</label>
+          <select id="Long" name="Long" required>
+            <option value="Corto">Corto</option>
+            <option value="Mediano">Mediano</option>
+            <option value="Largo">Largo</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label2" for="Tip">Tipo de pelo</label>
+          <select id="Tip" name="Tip" required>
+            <option value="Liso">Liso</option>
+            <option value="Rizado">Rizado</option>
+            <option value="Duro">Duro</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label2" for="Cues">Cuidados especiales </label>
+          <input class="input2" id="Cues" name="Cues" type="text" 
+                 placeholder="Por ejemplo: Higiene constante" required />
+        </div>
+
+        <div>
+          <label class="label2" for="Señas">Señas particulares  </label>
+          <input class="input2" id="Señas" name="Señas" type="text" 
+                 placeholder="Por ejemplo: Esconde la cola por miedo" required />
+        </div>
+
+        <div>
+          <label class="label2" for="foto_perfil">Ingresa una imagen de la mascota </label>
+          <input type="file" name="foto_perfil" accept="image/*">
         </div>
 
         <button class="btn btn--primary" type="submit">Siguiente</button>
