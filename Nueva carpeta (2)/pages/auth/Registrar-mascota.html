@@ -3,18 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Crear cuenta — VetCare</title>
+  <title>Registrar mascota - VetCare</title>
   <link rel="stylesheet" href="../../assets/css/auth.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css"/>
 </head>
 <body>
-  <main class="auth-shell">
+
+    <header>
+    <div class="container nav">
+      <!-- Logo a la izquierda -->
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span aria-hidden="true" class="logo"></span>
+        <span class="name"><b>VetCare</b><small>Hospital</small></span>
+      </a>
+
+      <!-- Menú principal (centro) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="index-user.html#especialidad">Especialidad</a>
+        <a href="index-user.html#doctores">Doctores</a>
+        <a href="index-user.html#sobre">Sobre nosotros</a>
+        <a href="index-user.html#contacto">Contacto</a>
+      </nav>
+   
+      <!-- Botón de usuario con menú/mini tabla (derecha) -->
+      <div class="user">
+        <!-- El botón es un <button> dentro de un <form> con tabindex para permitir :focus-within sin JS -->
+        <button class="trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
+          <span class="avatar" aria-hidden="true"></span>
+          <span>Cuenta</span>
+          <span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <!-- Panel sin JS: aparece al enfocar el contenedor .user -->
+        <div class="panel" role="dialog" aria-label="Opciones de cuenta">
+            <table class="mini-table">
+                <thead><tr><th colspan="2">Cuenta (Dueño)</th></tr></thead>
+                <tbody>
+                <tr><td>Mis mascotas</td><td><a class="btn" href="dashboard-user.html">Abrir</a></td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2"><a class="btn" href="login.html">Cerrar sesión</a></td></tr></tfoot>
+            </table>
+            </div>
+      </div>
+    </div>
+  </header>
+    <main class="auth-shell">
     <section class="card" role="region" aria-labelledby="reg-title">
-      <header class="brand">
+      <div class="brand">
         <i class="brand__logo" aria-hidden="true"></i>
         <span class="brand__name">VetCare</span>
-        <span class="badge" style="margin-left:auto">Registro</span>
-      </header>
-
+        <span class="badge2" style="margin-left:auto">Registro</span>
+      </div>
       <!-- <div class="alert alert--error" role="alert">El correo ya está registrado.</div> -->
       <!-- <div class="alert alert--success" role="alert">¡Revisa tu correo para verificar la cuenta!</div> -->
 
@@ -23,13 +61,13 @@
       <form class="form" method="post" action="/auth/register">
 
         <div>
-          <label class="label" for="nombre">Nombre</label>
+          <label class="label2" for="nombre">Nombre</label>
           <input class="input" id="nombre" name="nombre" type="text" 
                  placeholder="María López" required />
         </div>
 
         <div>
-          <label class="label" for="especie">Especie</label>
+          <label class="label2" for="especie">Especie</label>
           <select id="especie" name="especie" required>
             <option value="perro">Perro</option>
             <option value="gato">Gato</option>
@@ -39,7 +77,7 @@
         </div>
 
         <div>
-          <label class="label" for="raza">Raza</label>
+          <label class="label2" for="raza">Raza</label>
           <select id="raza" name="raza" required>
             <option value="akita_inu">Akita Inu</option>
             <option value="pastor_aleman">Pastor Alemán</option>
@@ -65,7 +103,7 @@
         </div>
 
         <div>
-          <label class="label">Sexo</label>
+          <label class="label2">Sexo</label>
           <label>
             <input type="radio" name="sexo" value="M" checked> M
           </label>
@@ -75,18 +113,18 @@
         </div>
 
         <div>
-          <label class="label" for="edad">Edad</label>
+          <label class="label2" for="edad">Edad</label>
           <input class="input2" id="edad" name="edad" type="number" min="0" 
                  placeholder="14" required /> <span>años</span>
         </div>
 
         <div>
-          <label class="label" for="cuidados">Cuidados Especiales</label>
+          <label class="label2" for="cuidados">Cuidados Especiales</label>
           <input class="input" id="cuidados" name="cuidados" type="text" />
         </div>
 
         <div>
-          <label class="label">¿Tu mascota está esterilizada?</label>
+          <label class="label2">¿Tu mascota está esterilizada?</label>
           <label>
             <input type="radio" name="esterilizado" value="si" checked> Sí
           </label>
@@ -96,19 +134,19 @@
         </div>
 
         <div>
-          <label class="label" for="largo">Largo</label>
+          <label class="label2" for="largo">Largo</label>
           <input class="input2" id="largo" name="largo" type="number" min="0"
                  placeholder="80" required /> <span>cm</span>
         </div>
 
         <div>
-          <label class="label" for="peso">Peso</label>
+          <label class="label2" for="peso">Peso</label>
           <input class="input2" id="peso" name="peso" type="number" min="0"
                  placeholder="65" required /> <span>kg</span>
         </div>
 
         <div>
-          <label class="label" for="color">Color</label>
+          <label class="label2" for="color">Color</label>
           <select id="color" name="color" required>
             <option value="negro">Negro</option>
             <option value="blanco">Blanco</option>
@@ -120,7 +158,7 @@
         </div>
 
         <div>
-          <label class="label" for="patron_color">Patrón de color</label>
+          <label class="label2" for="patron_color">Patrón de color</label>
           <select id="patron_color" name="patron_color">
             <option value="atigrado">Atigrado (rayas o bandas de color)</option>
             <option value="merle">Merle (manchas irregulares sobre fondo oscuro)</option>
