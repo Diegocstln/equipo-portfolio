@@ -74,3 +74,13 @@ a:hover{text-decoration:underline}
 }
 .input2::placeholder{color:#7383a0}
 .input2:focus{box-shadow:var(--focus); border-color:var(--primary-700)}
+
+.error-msg {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #ffb3b9;
+  background: #2a1316;
+  border: 1px solid #61202a;
+  border-radius: 12px;
+}

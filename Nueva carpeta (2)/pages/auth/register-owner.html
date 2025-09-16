@@ -21,109 +21,110 @@
       <h1 class="h" id="reg-title">Crea tu cuenta de dueño</h1>
       <p class="p-muted">Recibirás un correo para verificar tu cuenta antes de ingresar.</p>
 
-      <form class="form" method="post" action="/auth/register">
-        <div>
-          <label class="label" for="name">Nombre completo</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="María" required />
-        </div>
+      <form id = formulario class="form" method="post" action="/auth/register">
+      <div>
+        <label class="label" for="nombre">Nombre completo</label>
+        <input class="input" id="nombre" name="nombre" type="text" autocomplete="given-name"
+              placeholder="María" required />
+      </div>
 
-        <div>
-          <label class="label" for="last">Apellido paterno</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="Lopez" required />
-        </div>
+      <div>
+        <label class="label" for="apellidoP">Apellido paterno</label>
+        <input class="input" id="apellidoP" name="apellidoP" type="text" autocomplete="family-name"
+              placeholder="López" required />
+      </div>
 
-        <div>
-          <label class="label" for="last2">Apellido materno</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="Sepeda" required />
-        </div>
+      <div>
+        <label class="label" for="apellidoM">Apellido materno</label>
+        <input class="input" id="apellidoM" name="apellidoM" type="text" autocomplete="family-name"
+              placeholder="Sepeda" required />
+      </div>
 
-        <div>
-          <label class="label" for="email">Correo electrónico</label>
-          <input class="input" id="email" name="email" type="email" inputmode="email"
-                 autocomplete="email" placeholder="tucorreo@ejemplo.com" required />
-        </div>
+      <div>
+        <label class="label" for="email">Correo electrónico</label>
+        <input class="input" id="email" name="email" type="email" inputmode="email"
+              autocomplete="email" placeholder="tucorreo@ejemplo.com" required />
+      </div>
 
-        <div>
-          <label class="label" for="phone">Teléfono</label>
-          <input class="input" id="phone" name="phone" type="tel" autocomplete="tel"
-                 placeholder="55 1234 5678" />
-        </div>
+      <div>
+        <label class="label" for="telefono">Teléfono</label>
+        <input class="input" id="telefono" name="telefono" type="tel" autocomplete="tel"
+              placeholder="55 1234 5678" />
+      </div>
 
-        <div>
-          <label class="label2">Sexo</label>
-          <label>
-            <input type="radio" name="sexo" value="M" checked> M
-          </label>
-          <label>
-            <input type="radio" name="sexo" value="F"> F
-          </label>
-        </div>
+      <div>
+        <label class="label2">Sexo</label>
+        <label>
+          <input type="radio" name="sexo" value="M" checked> M
+        </label>
+        <label>
+          <input type="radio" name="sexo" value="F"> F
+        </label>
+      </div>
 
-        <div>
-          <label class="label2" for="Date">Fecha de nacimiento</label>
-          <input class="input2" id="Date" name="Date" type="text"  
-                 placeholder="01/01/01" required />
-        </div>
+      <div>
+        <label class="label2" for="fechaNac">Fecha de nacimiento</label>
+        <input class="input2" id="fechaNac" name="fechaNac" type="date"
+              required />
+      </div>
 
-        <b>Mascotas</b>
+      <b>Mascotas</b>
 
-        <div>
-          <label class="label" for="NuMa">Numero de mascotas</label>
-          <input class="input" id="NuMa" name="NuMa" type="text" autocomplete="NuMa"
-                 placeholder="2" required />
-        </div>
+      <div>
+        <label class="label" for="numMascotas">Número de mascotas</label>
+        <input class="input" id="numMascotas" name="numMascotas" type="number" min="0"
+              placeholder="2" required />
+      </div>
 
-        <b>Dirección</b>
+      <b>Dirección</b>
 
-        <div>
-          <label class="label" for="count">Pais</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="México" required />
-        </div>
+      <div>
+        <label class="label" for="pais">País</label>
+        <input class="input" id="pais" name="pais" type="text" autocomplete="country-name"
+              placeholder="México" required />
+      </div>
 
-        <div>
-          <label class="label" for="state">Estado</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="CDMX" required />
-        </div>
+      <div>
+        <label class="label" for="estado">Estado</label>
+        <input class="input" id="estado" name="estado" type="text" autocomplete="address-level1"
+              placeholder="CDMX" required />
+      </div>
 
-        <div>
-          <label class="label" for="Del">Delegacion/Municipio</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="Azcapotzalco" required />
-        </div>
+      <div>
+        <label class="label" for="municipio">Delegación/Municipio</label>
+        <input class="input" id="municipio" name="municipio" type="text" autocomplete="address-level2"
+              placeholder="Azcapotzalco" required />
+      </div>
 
-        <div>
-          <label class="label" for="Colonia">Colonia</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="El Rosario" required />
-        </div>
+      <div>
+        <label class="label" for="colonia">Colonia</label>
+        <input class="input" id="colonia" name="colonia" type="text"
+              placeholder="El Rosario" required />
+      </div>
 
-        <div>
-          <label class="label" for="Calle">Calle/Avenida</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="Av. 477" required />
-        </div>
+      <div>
+        <label class="label" for="calle">Calle/Avenida</label>
+        <input class="input" id="calle" name="calle" type="text"
+              placeholder="Av. 477" required />
+      </div>
 
-        <div>
-          <label class="label" for="No.">Numero exterior</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="46" required />
-        </div>
+      <div>
+        <label class="label" for="numExt">Número exterior</label>
+        <input class="input" id="numExt" name="numExt" type="text"
+              placeholder="46" required />
+      </div>
 
-        <div>
-          <label class="label" for="No.">Numero interior(opcional)</label>
-          <input class="input" id="name" name="name" type="text" autocomplete="name"
-                 placeholder="46"  />
-        </div>
+      <div>
+        <label class="label" for="numInt">Número interior (opcional)</label>
+        <input class="input" id="numInt" name="numInt" type="text"
+              placeholder="46" />
+      </div>
 
-        <div>
-          <label class="label" for="foto_perfil">Ingresa una imagen de foto de perfil</label>
-          <input type="file" name="foto_perfil" accept="image/*">
-        </div>
+      <div>
+        <label class="label" for="fotoPerfil">Ingresa una imagen de foto de perfil</label>
+        <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*">
+      </div>
+
 
         <a href="register-owner2.html" class="btn btn--primary">Siguiente</a>
 
@@ -133,5 +134,6 @@
       <p class="footer">¿Ya tienes cuenta? <a href="./login.html">Inicia sesión</a>.</p>
     </section>
   </main>
+  <script src="../../assets/css/fun.js"></script>
 </body>
 </html>
