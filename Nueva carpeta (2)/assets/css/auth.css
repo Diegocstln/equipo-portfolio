@@ -84,3 +84,5 @@ a:hover{text-decoration:underline}
   border: 1px solid #61202a;
   border-radius: 12px;
 }
+.hidden{ display:none; }
+
