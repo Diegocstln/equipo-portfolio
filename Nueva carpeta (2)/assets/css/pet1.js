@@ -1,45 +1,25 @@
-// pet.js
+// pet.js — controla qué lista de razas se ve según la especie seleccionada
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("conectada")
-  const especieSel = document.getElementById('especie'); // nombre consistente
-
-  // Mapeo especie → selects (tus IDs tal cual)
-  const selects = {
-    perro : document.getElementById('Perro'),
-    gato  : document.getElementById('Gato'),
-    reptil: document.getElementById('Reptil'),
-    ave   : document.getElementById('Aves'),
-  };
-
-  // Mapeo especie → labels (opcional, para ocultar/mostrar etiqueta)
-  const labels = {
-    perro : document.querySelector('label[for="Perro"]'),
-    gato  : document.querySelector('label[for="Gato"]'),
-    reptil: document.querySelector('label[for="Reptil"]'),
-    ave   : document.querySelector('label[for="Aves"]'),
-  };
+  const especieSel = document.getElementById('especie');
 
   function mostrarLista(especie){
-    Object.keys(selects).forEach(key => {
-      const sel = selects[key];
-      const lab = labels[key];
-      const activa = (key === especie);
-
-      if (sel) {
-        sel.classList.toggle('hidden', !activa); // <- classList (minúscula)
-        sel.hidden = !activa;
-        if (activa) sel.setAttribute('name','raza');
-        else        sel.removeAttribute('name');
-        if (activa && !sel.value) sel.selectedIndex = 0;
-      }
-      if (lab) lab.classList.toggle('hidden', !activa);
+    // Oculta todas y quita name para no enviar múltiples valores
+    document.querySelectorAll('#contenedor-raza .raza').forEach(sel => {
+      sel.classList.add('hidden');
+      sel.removeAttribute('name');
     });
+
+    // Muestra solo la de la especie actual y asegura name="raza"
+    const activo = document.getElementById('raza-' + especie);
+    if (activo){
+      activo.classList.remove('hidden');
+      activo.setAttribute('name','raza');
+      if (!activo.value) activo.selectedIndex = 0;
+    }
   }
 
-  especieSel.addEventListener('change', (e) => {
-    mostrarLista(e.target.value);
-  });
+  especieSel.addEventListener('change', e => mostrarLista(e.target.value));
 
-  // Estado inicial
+  // Estado inicial (valor actual del select especie)
   mostrarLista(especieSel.value || 'perro');
 });
