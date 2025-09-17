@@ -127,7 +127,3 @@
       border-radius: var(--radius-sm);
       background: #0d1526;
     }
-
-    .hidden {
-      display: none; /* Oculta el formulario completamente */
-    }
