@@ -100,6 +100,8 @@
             <option value="border_collie">Border Collie</option>
             <option value="san_bernardo">San Bernardo</option>
             <option value="mastin_napolitano">Mastín Napolitano</option>
+            <option value="mastin_napolitano">Criollo</option>
+            <option value="NiIdea">Desconocida</option>
           </select>
         </div>
 
@@ -173,14 +175,14 @@
             <option value="Turkish_Angora">Turkish Angora</option>
             <option value="Turkish_Van">Turkish Van</option>
             <option value="Criollo">Criollo</option>
-            <option value="NiIdea">No se de que raza sea</option>
+            <option value="NiIdea">Desconocida</option>
             </select>
         </div>
 
         <!--en caso de reptiles--> 
-        <div class="raza hidden" id="raza-reptil">
-          <label class="label2" for="select-reptil">Raza</label>
-          <select id="select-reptil" name="raza">
+        <div>
+          <label class="hidden" for="Reptil">Raza</label>
+          <select class="hidden" id="Reptil" name="Reptil" required>
             <option value="Dragon_Bearded">Dragón Barbudo</option>
             <option value="Python_Bola">Pitón Bola</option>
             <option value="Gecko_Leopardo">Gecko Leopardo</option>
@@ -196,13 +198,14 @@
             <option value="Serpiente_Cascabel">Serpiente de Cascabel</option>
             <option value="Varano_Acuatico">Varano Acuático</option>
             <option value="Tortuga_del_Desierto">Tortuga del Desierto</option>
+            <option value="NiIdea">Desconocida</option>
           </select>
         </div>
 
         <!--en caso de aves-->
-        <div class="raza hidden" id="raza-ave">
-          <label class="label2" for="select-ave">Raza</label>
-          <select id="select-ave" name="raza">
+        <div>
+          <label class="hidden" for="Aves">Raza</label>
+          <select class="hidden" id="Aves" name="Aves" required>
             <option value="Periquito_Australiano">Periquito Australiano</option>
             <option value="Canario">Canario</option>
             <option value="Diamante_Mandarín">Diamante Mandarín</option>
@@ -223,7 +226,6 @@
             <option value="Pavo_Real">Pavo Real</option>
             <option value="Pavo_Domestico">Pavo Doméstico</option>
             <option value="Ganso_Emden">Ganso Emden</option>
-            
           </select>
         </div>
       </div>
@@ -282,113 +284,55 @@
                  placeholder="65" required /> <span>kg</span>
         </div>
 
+          <!--En caso de Perros (Es lo que se ve inicialmente)-->
+
         <div>
           <label class="label2" for="color_Perro">Color</label>
           <select id="color_Perro" name="color_Perro" required>
-            <option value="negro">Negro</option>
-            <option value="blanco">Blanco</option>
-            <option value="marron">Marrón</option>
-            <option value="gris">Gris</option>
-            <option value="rojo">Rojo</option>
-            <option value="amarillo">Amarillo</option>
-            </select>
-          </div>
-
-<!-- En caso de gatos--> 
-        <div>
-          <label class="hidden" for="color_Gato">Color</label>
-            <select class="hidden" id="color_Gato" name="color_Gato" required>
-              <option value="Negro">Negro</option>
               <option value="Blanco">Blanco</option>
-              <option value="Gris_Azul">Gris</option>
-              <option value="Gris_Azul">Azul</option>
+              <option value="Negro">Negro</option>
+              <option value="Gris">Gris</option>
+              <option value="Marron">Marrón</option>
+              <option value="Crema_Beige">Crema / Beige</option>
+              <option value="Amarillo">Amarillo</option>
+              <option value="Naranja">Naranja</option>
+              <option value="Rojo">Rojo</option>
+              <option value="Verde">Verde</option>
+              <option value="Azul">Azul</option>
+              <option value="Violeta">Violeta</option>
+              <option value="Dorado">Dorado</option>
+              <option value="Plateado">Plateado</option>
               <option value="Marron_Chocolate">Marrón</option>
               <option value="Marron_Chocolate">Chocolate</option>
-              <option value="Canela">Canela</option>
-              <option value="Naranja_Rojo">Naranja</option>
-              <option value="Naranja_Rojo">Rojo</option>
-              <option value="Crema">Crema</option>
+              <option value="Rosa">Rosa</option>
             </select>
           </div>
 
-          <!--En caso de Reptiles--> 
+
+          <!--En caso de Perros (Es lo que se ve inicialmente)-->
 
         <div>
-          <label class="hidden" for="color_Reptil">Color</label>
-            <select class="hidden" id="color_Reptil" name="color_Reptil" required>
-              <option value="Verde">Verde</option>
-              <option value="Marron">Marrón</option>
-              <option value="Gris">Gris</option>
-              <option value="Negro">Negro</option>
+          <label class="label2" for="colorS">Color Secundario</label>
               <option value="Blanco">Blanco</option>
-              <option value="Amarillo">Amarillo</option>
-              <option value="Rojo_Naranja">Rojo / Naranja</option>
-              <option value="Azul">Azul</option>
-            </select>
-          </div>
-
-          <!--En caso de Aves-->
-
-        <div>
-          <label class="hidden" for="color_Gato">Color</label>
-          <select class="hidden" name="color_Gato" required>
-            <option value="Negro">Negro</option>
-            <option value="Blanco">Blanco</option>
-            <option value="Gris_Azul">Gris / Azul</option>
-            <option value="Marron_Chocolate">Marrón / Chocolate</option>
-            <option value="Canela">Canela</option>
-            <option value="Naranja_Rojo">Naranja / Rojo</option>
-            <option value="Crema">Crema</option>
-            </select>
-          </div>
-
-
-        <div>
-          <label class="label2" for="colorS_Perro">Color Secundario</label>
-          <select id="colorS_Perro" name="colorS_Perro" required>
-            <option value="negro">Negro</option>
-            <option value="blanco">Blanco</option>
-            <option value="marron">Marrón</option>
-            <option value="gris">Gris</option>
-            <option value="rojo">Rojo</option>
-            <option value="amarillo">Amarillo</option>
-            </select>
-          </div>
-
-<!-- En caso de gatos 
-        <div>
-          <label class="label2" for="color_Gato">Color Secundario</label>
-          <select id="color_Gato" name="color_Gato" required>
-            <option value="Negro">Negro</option>
-            <option value="Blanco">Blanco</option>
-            <option value="Gris_Azul">Gris</option>
-            <option value="Gris_Azul">Azul</option>
-            <option value="Marron_Chocolate">Marrón</option>
-            <option value="Marron_Chocolate">Chocolate</option>
-            <option value="Canela">Canela</option>
-            <option value="Naranja_Rojo">Naranja</option>
-            <option value="Naranja_Rojo">Rojo</option>
-            <option value="Crema">Crema</option>
-            </select>
-          </div>
-
-        En caso de Reptiles 
-
-        <div>
-          <label class="label2" for="colorS_Reptil">Color Secundario</label>
-            <select id="colorS_Reptil" name="colors_Reptil" required>
-              <option value="Verde">Verde</option>
-              <option value="Marron">Marrón</option>
-              <option value="Gris">Gris</option>
               <option value="Negro">Negro</option>
-              <option value="Blanco">Blanco</option>
+              <option value="Gris">Gris</option>
+              <option value="Marron">Marrón</option>
+              <option value="Crema_Beige">Crema / Beige</option>
               <option value="Amarillo">Amarillo</option>
-              <option value="Rojo_Naranja">Rojo / Naranja</option>
+              <option value="Naranja">Naranja</option>
+              <option value="Rojo">Rojo</option>
+              <option value="Verde">Verde</option>
               <option value="Azul">Azul</option>
+              <option value="Violeta">Violeta</option>
+              <option value="Dorado">Dorado</option>
+              <option value="Plateado">Plateado</option>
+              <option value="Marron_Chocolate">Marrón</option>
+              <option value="Marron_Chocolate">Chocolate</option>
+              <option value="Rosa">Rosa</option>
             </select>
           </div>
 
--->
+          <!--En caso de Perros (Es lo que se ve inicialmente)-->
 
         <div>
           <label class="label2" for="patron_color_Perros">Patrón de color</label>
@@ -399,13 +343,15 @@
             <option value="Particolor">Particolor (Manchas de dos o más colores)</option>
             <option value="Piebald">Piebald (Un color con manchas de otro color sobre el cuerpo)</option>
             <option value="Bicolor">Bicolor (Mitad y mitad)</option>
+            <option value="Multicolor">Multicolor</option>
+            <option value="Manchas">Manchas</option>
+            <option value="Sólido">Sólido</option>
           </select>
         </div>
 
-<!-- En caso de gatos 
+    <!-- En caso de gatos -->
          <div>
-          <label class="label2" for="patron_color_Gatos">Patrón de color</label>
-          <select id="patron_color_Gatos" name="patron_color_Gatos">
+          <select class="hidden" id="patron_color_Gatos" name="patron_color_Gatos">
             <option value="Bicolor">Bicolor</option>
             <option value="Tricolor_Calico">Tricolor (Calicó)</option>
             <option value="Carey_Tortie">Carey (Tortie)</option>
@@ -414,16 +360,69 @@
             <option value="Tabby_Mackerel">Atigrado Rayado / Mackerel Tabby</option>
             <option value="Tabby_Moteado">Atigrado Moteado (Spotted Tabby)</option>
             <option value="Tabby_Ticked">Atigrado en Espiga / Ticked Tabby</option>
+            <option value="Multicolor">Multicolor</option>
+            <option value="Manchas">Manchas</option>
+            <option value="Sólido">Sólido</option>
           </select>
         </div>
--->
+
+        <!--En caso de Reptiles-->
+
+        <div>
+          <select class="hidden" id="patron_color_Reptiles" name="patron_color_Reptiles">
+            <option value="Albino">Albino</option>
+            <option value="Leucistico">Leucístico</option>
+            <option value="Hipomelanistico">Hipomelanístico</option>
+            <option value="Anerytristico">Anerytrístico (sin rojo)</option>
+            <option value="Melanistico">Melanístico (exceso de negro)</option>
+            <option value="Moteado">Moteado / Spotted</option>
+            <option value="Rayado">Rayado / Striped</option>
+            <option value="Bicolor">Bicolor</option>
+            <option value="Tricolor">Tricolor</option>
+            <option value="Caramel">Caramel</option>
+            <option value="Pastel">Pastel</option>
+            <option value="Piebald">Piebald (manchas blancas irregulares)</option>
+            <option value="Patternless">Patternless (sin patrón)</option>
+            <option value="Motley">Motley (líneas dorsales unidas)</option>
+            <option value="Jungle">Jungle (diseños irregulares)</option>
+            <option value="Multicolor">Multicolor</option>
+            <option value="Manchas">Manchas</option>
+            <option value="Sólido">Sólido</option>
+          </select>
+        </div>
+
+        <!--En caso de Aves-->
+
+        <div>
+          <select class="hidden" id="patron_color_Aves" name="patron_color_Aves">
+              <option value="Solido">Sólido (uniforme)</option>
+              <option value="Bicolor">Bicolor</option>
+              <option value="Tricolor">Tricolor</option>
+              <option value="Barrado">Barrado (Barras de colores con blancas)</option>
+              <option value="Listado">Rayado</option>
+              <option value="Moteado">Moteado</option>
+              <option value="Salpicado">Salpicado (Como una gota de un color esparcida en otro)</option>
+              <option value="Escamado">Escamado </option>
+              <option value="Perdiz">Perdiz (Partridge)</option>
+              <option value="Trigo">Trigo (Wheaten)</option>
+              <option value="Millefleur">Millefleur(Pequeñas manchas de colores en cada pluma)</option>
+              <option value="Pio">Pío (Manchas de forma irregular)</option>
+              <option value="Armiñado">Armiñado (Un color de fondo con blanco)</option>
+              <option value="Splash">Splash(Manchas blancas grandes e irregulares)</option>
+              <option value="Multicolor">Multicolor</option>
+              <option value="Manchas">Manchas</option>
+              <option value="Sólido">Sólido</option>
+          </select>
+        </div>
 
         <div>
           <label class="label2" for="Long">Largura del pelaje</label>
           <select id="Long" name="Long" required>
             <option value="Corto">Corto</option>
-            <option value="Mediano">Mediano</option>
+            <option value="Mediano">Medio</option>
             <option value="Largo">Largo</option>
+            <option value="Plumas">Plumas</option>
+            <option value="Escamas">Escamas</option>
           </select>
         </div>
 
@@ -433,6 +432,8 @@
             <option value="Liso">Liso</option>
             <option value="Rizado">Rizado</option>
             <option value="Duro">Duro</option>
+            <option value="Plumas">Plumas</option>
+            <option value="Escamas">Escamas</option>
           </select>
         </div>
 
