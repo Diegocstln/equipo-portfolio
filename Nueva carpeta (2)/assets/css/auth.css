@@ -86,3 +86,14 @@ a:hover{text-decoration:underline}
 }
 .hidden{ display:none; }
 
+#contenedor-raza {
+  position: relative;
+  min-height: 60px;   /* reserva un alto fijo para que no brinque */
+}
+#contenedor-raza select {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+}
+
+

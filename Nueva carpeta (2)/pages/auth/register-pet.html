@@ -65,6 +65,7 @@
           <input class="input" id="nombre" name="nombre" type="text" 
                  placeholder="Firulais" required />
         </div>
+        
 
         <div>
           <label class="label2" for="especie">Especie</label>
@@ -75,10 +76,10 @@
             <option value="ave">Ave</option>
           </select>
         </div>
-
-        <div>
-          <label class="label2" for="raza">Raza</label>
-          <select id="Perro" name="raza" required>
+      <div id="contenedor-raza">
+        <div class="raza" id="raza-perro">
+          <label class="label2" for="select-perro">Raza</label>
+          <select id="select-perro" name="raza">
             <option value="akita_inu">Akita Inu</option>
             <option value="pastor_aleman">Pastor Alemán</option>
             <option value="labrador_retriever">Labrador Retriever</option>
@@ -104,9 +105,9 @@
 
         <!--En caso de Gatos-->
 
-        <div>
-          <label class="hidden" for="Gato">Raza</label>
-          <select class="hidden" id="Gato" name="Gato" required>
+         <div class="raza hidden" id="raza-gato">
+          <label class="label2" for="select-gato">Raza</label>
+          <select id="select-gato" name="raza">
             <option value="Abyssinian">Abyssinian</option>
             <option value="Aegean">Aegean</option>
             <option value="American_Bobtail">American Bobtail</option>
@@ -177,9 +178,9 @@
         </div>
 
         <!--en caso de reptiles--> 
-        <div>
-          <label class="hidden" for="Reptil">Raza</label>
-          <select class="hidden" id="Reptil" name="Reptil" required>
+        <div class="raza hidden" id="raza-reptil">
+          <label class="label2" for="select-reptil">Raza</label>
+          <select id="select-reptil" name="raza">
             <option value="Dragon_Bearded">Dragón Barbudo</option>
             <option value="Python_Bola">Pitón Bola</option>
             <option value="Gecko_Leopardo">Gecko Leopardo</option>
@@ -199,9 +200,9 @@
         </div>
 
         <!--en caso de aves-->
-        <div>
-          <label class="hidden" for="Aves">Raza</label>
-          <select class="hidden" id="Aves" name="Aves" required>
+        <div class="raza hidden" id="raza-ave">
+          <label class="label2" for="select-ave">Raza</label>
+          <select id="select-ave" name="raza">
             <option value="Periquito_Australiano">Periquito Australiano</option>
             <option value="Canario">Canario</option>
             <option value="Diamante_Mandarín">Diamante Mandarín</option>
@@ -224,6 +225,8 @@
             <option value="Ganso_Emden">Ganso Emden</option>
           </select>
         </div>
+      </div>
+
 
         <div>
           <label class="label2">Sexo</label>
