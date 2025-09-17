@@ -246,6 +246,12 @@
               required />
       </div>
 
+      <div>
+        <label class="label2" for="fechaDes">Fecha de última desparacitación</label>
+        <input class="input2" id="fechaDes" name="fechaDes" type="date"
+              required />
+      </div>
+
         <div>
           <label class="label2" for="RUAC">Registro Único de Animales de Compañía (RUAC)</label>
           <input class="input" id="RUAC" name="RUAC" type="text" 
@@ -453,9 +459,9 @@
           <label class="label2" for="foto_perfil">Ingresa una imagen de la mascota </label>
           <input type="file" name="foto_perfil" accept="image/*">
         </div>
-
-        <a href="register-pet2.html" class="btn btn--primary">Siguiente</a>
-
+            <!-- Cambia el botón por un botón normal -->
+          <button id="btn-siguiente" class="btn btn--primary" type="button">Siguiente</button>
+          
         <div class="divider"></div>
       </form>
     </section>
@@ -464,3 +470,4 @@
  <script src="../../assets/css/pet1.js"></script>
 </body>
 </html>
+
