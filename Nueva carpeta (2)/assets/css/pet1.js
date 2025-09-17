@@ -2,24 +2,54 @@
 document.addEventListener('DOMContentLoaded', () => {
   const especieSel = document.getElementById('especie');
 
-  function mostrarLista(especie){
-    // Oculta todas y quita name para no enviar múltiples valores
+  function mostrarLista(especie) {
+    // Oculta todos los selects de raza
     document.querySelectorAll('#contenedor-raza .raza').forEach(sel => {
       sel.classList.add('hidden');
-      sel.removeAttribute('name');
+      
+      // También deshabilita el select interno
+      const select = sel.querySelector('select');
+      if (select) select.disabled = true;
+    });
+    document.querySelectorAll('#contenedor-patron .patron').forEach(sel => {
+      sel.classList.add('hidden');
+      
+      // También deshabilita el select interno
+      const select = sel.querySelector('select');
+      if (select) select.disabled = true;
     });
 
-    // Muestra solo la de la especie actual y asegura name="raza"
-    const activo = document.getElementById('raza-' + especie);
-    if (activo){
-      activo.classList.remove('hidden');
-      activo.setAttribute('name','raza');
-      if (!activo.value) activo.selectedIndex = 0;
+    // Normaliza el nombre de la especie para los IDs
+    let especieId = especie.toLowerCase();
+    if (especieId === 'perro') especieId = 'perro';
+    else if (especieId === 'gato') especieId = 'gato';
+    else if (especieId === 'reptil') especieId = 'reptil';
+    else if (especieId === 'ave') especieId = 'ave';
+
+    // Muestra solo el select correspondiente
+    const activoRaza = document.getElementById('raza-' + especieId);
+    if (activoRaza) {
+      activoRaza.classList.remove('hidden');
+      const select = activoRaza.querySelector('select');
+      if (select) {
+        select.disabled = false;
+        select.selectedIndex = 0;
+      }
+    }
+        // Muestra solo el select correspondiente
+    const activoPatron= document.getElementById('patron-' + especieId);
+    if (activoPatron) {
+      activoPatron.classList.remove('hidden');
+      const select = activoPatron.querySelector('select');
+      if (select) {
+        select.disabled = false;
+        select.selectedIndex = 0;
+      }
     }
   }
 
   especieSel.addEventListener('change', e => mostrarLista(e.target.value));
 
-  // Estado inicial (valor actual del select especie)
+  // Estado inicial
   mostrarLista(especieSel.value || 'perro');
 });
