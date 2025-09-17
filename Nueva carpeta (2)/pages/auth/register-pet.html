@@ -76,10 +76,12 @@
             <option value="ave">Ave</option>
           </select>
         </div>
+
+      <label class="label2">Raza</label>
+
       <div id="contenedor-raza">
         <div class="raza" id="raza-perro">
-          <label class="label2" for="select-perro">Raza</label>
-          <select id="select-perro" name="raza">
+          <select id="select-Perro" name="raza">
             <option value="akita_inu">Akita Inu</option>
             <option value="pastor_aleman">Pastor Alemán</option>
             <option value="labrador_retriever">Labrador Retriever</option>
@@ -108,7 +110,6 @@
         <!--En caso de Gatos-->
 
          <div class="raza hidden" id="raza-gato">
-          <label class="label2" for="select-gato">Raza</label>
           <select id="select-gato" name="raza">
             <option value="Abyssinian">Abyssinian</option>
             <option value="Aegean">Aegean</option>
@@ -180,9 +181,8 @@
         </div>
 
         <!--en caso de reptiles--> 
-        <div>
-          <label class="hidden" for="Reptil">Raza</label>
-          <select class="hidden" id="Reptil" name="Reptil" required>
+        <div class="raza hidden" id="raza-reptil">
+          <select id="select-reptil" name="raza" >
             <option value="Dragon_Bearded">Dragón Barbudo</option>
             <option value="Python_Bola">Pitón Bola</option>
             <option value="Gecko_Leopardo">Gecko Leopardo</option>
@@ -203,9 +203,8 @@
         </div>
 
         <!--en caso de aves-->
-        <div>
-          <label class="hidden" for="Aves">Raza</label>
-          <select class="hidden" id="Aves" name="Aves" required>
+        <div class="raza hidden" id="raza-ave">
+          <select id="select-ave" name="raza" required>
             <option value="Periquito_Australiano">Periquito Australiano</option>
             <option value="Canario">Canario</option>
             <option value="Diamante_Mandarín">Diamante Mandarín</option>
@@ -287,8 +286,8 @@
           <!--En caso de Perros (Es lo que se ve inicialmente)-->
 
         <div>
-          <label class="label2" for="color_Perro">Color</label>
-          <select id="color_Perro" name="color_Perro" required>
+          <label class="label2" for="color">Color</label>
+          <select id="color" name="color" required>
               <option value="Blanco">Blanco</option>
               <option value="Negro">Negro</option>
               <option value="Gris">Gris</option>
@@ -313,6 +312,7 @@
 
         <div>
           <label class="label2" for="colorS">Color Secundario</label>
+          <select id="colorS" name="colorS" required>
               <option value="Blanco">Blanco</option>
               <option value="Negro">Negro</option>
               <option value="Gris">Gris</option>
@@ -333,10 +333,10 @@
           </div>
 
           <!--En caso de Perros (Es lo que se ve inicialmente)-->
-
-        <div>
-          <label class="label2" for="patron_color_Perros">Patrón de color</label>
-          <select id="patron_color_Perros" name="patron_color_Perros">
+      <label class="label2">Patrón de color</label>
+      <div id="contenedor-patron">
+        <div class="patron" id="patron-perro">
+          <select id="select-perros" name="patron">
             <option value="atigrado">Atigrado (rayas o bandas de color)</option>
             <option value="merle">Merle (manchas irregulares sobre fondo oscuro)</option>
             <option value="arlequin">Arlequín (manchas negras sobre fondo blanco)</option>
@@ -350,8 +350,8 @@
         </div>
 
     <!-- En caso de gatos -->
-         <div>
-          <select class="hidden" id="patron_color_Gatos" name="patron_color_Gatos">
+        <div class="patron hidden" id="patron-gato">
+          <select id="select-gato" name="patron">
             <option value="Bicolor">Bicolor</option>
             <option value="Tricolor_Calico">Tricolor (Calicó)</option>
             <option value="Carey_Tortie">Carey (Tortie)</option>
@@ -368,8 +368,8 @@
 
         <!--En caso de Reptiles-->
 
-        <div>
-          <select class="hidden" id="patron_color_Reptiles" name="patron_color_Reptiles">
+        <div class="patron hidden" id="patron-reptile">
+          <select id="select-reptile" name="patron">
             <option value="Albino">Albino</option>
             <option value="Leucistico">Leucístico</option>
             <option value="Hipomelanistico">Hipomelanístico</option>
@@ -393,8 +393,8 @@
 
         <!--En caso de Aves-->
 
-        <div>
-          <select class="hidden" id="patron_color_Aves" name="patron_color_Aves">
+        <div class="patron hidden" id="patron-ave">
+          <select id="select-ave" name="patron">
               <option value="Solido">Sólido (uniforme)</option>
               <option value="Bicolor">Bicolor</option>
               <option value="Tricolor">Tricolor</option>
@@ -411,9 +411,9 @@
               <option value="Splash">Splash(Manchas blancas grandes e irregulares)</option>
               <option value="Multicolor">Multicolor</option>
               <option value="Manchas">Manchas</option>
-              <option value="Sólido">Sólido</option>
           </select>
         </div>
+      </div>
 
         <div>
           <label class="label2" for="Long">Largura del pelaje</label>
