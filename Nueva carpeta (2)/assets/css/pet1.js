@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (select) select.disabled = true;
     });
 
+    
+
     // Normaliza el nombre de la especie para los IDs
     let especieId = especie.toLowerCase();
     if (especieId === 'perro') especieId = 'perro';
@@ -46,10 +48,18 @@ document.addEventListener('DOMContentLoaded', () => {
         select.selectedIndex = 0;
       }
     }
+
   }
 
   especieSel.addEventListener('change', e => mostrarLista(e.target.value));
 
   // Estado inicial
   mostrarLista(especieSel.value || 'perro');
+});
+
+
+document.getElementById('btn-siguiente').addEventListener('click', function() {
+  const especie = document.getElementById('especie').value;
+  localStorage.setItem('especieSeleccionada', especie);
+  window.location.href = 'register-pet2.html';
 });
