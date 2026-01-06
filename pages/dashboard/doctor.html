@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel del Doctor — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  <style>
+    .dashboard {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, var(--card), var(--card-2));
+      box-shadow: var(--shadow);
+    }
+    .dashboard h1 { margin-top: 0; }
+    .cards { display: grid; gap: 16px; margin-top: 20px; }
+    .card {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: #0d1526;
+    }
+  </style>
+</head>
+<body>
+   <header>
+    <div class="container nav">
+      <!-- Logo a la izquierda -->
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span aria-hidden="true" class="logo"></span>
+        <span class="name"><b>VetCare</b><small>Hospital</small></span>
+      </a>
+
+      <!-- Menú principal (centro) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="index-user.html#especialidad">Especialidad</a>
+        <a href="index-user.html#doctores">Doctores</a>
+        <a href="index-user.html#sobre">Sobre nosotros</a>
+        <a href="index-user.html#contacto">Contacto</a>
+      </nav>
+   
+      <!-- Botón de usuario con menú/mini tabla (derecha) -->
+      <div class="user">
+        <!-- El botón es un <button> dentro de un <form> con tabindex para permitir :focus-within sin JS -->
+        <button class="trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
+          <span class="avatar" aria-hidden="true"></span>
+          <span>Cuenta</span>
+          <span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <!-- Panel sin JS: aparece al enfocar el contenedor .user -->
+        <div class="panel" role="dialog" aria-label="Opciones de cuenta">
+            <table class="mini-table">
+                <thead><tr><th colspan="2">Cuenta (Dueño)</th></tr></thead>
+                <tbody>
+                <tr><td>Mis mascotas</td><td><a class="btn" href="dashboard-user.html">Abrir</a></td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2"><a class="btn" href="./pages/auth/login.html">Cerrar sesión</a></td></tr></tfoot>
+            </table>
+            </div>
+      </div>
+    </div>
+  </header>
+  <main class="auth-shell">
+    <section class="dashboard">
+      <h1>👨‍⚕️ Panel del Doctor</h1>
+      <p class="p-muted">Bienvenido, aquí verás un resumen rápido de tu agenda y pacientes.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h2>Citas de hoy</h2>
+          <ul>
+            <li>10:00 — Max (Perro) — Consulta general</li>
+            <li>12:30 — Luna (Gato) — Control postoperatorio</li>
+            <li>16:00 — Rocky (Perro) — Vacunación</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Mensajes</h2>
+          <p>No tienes mensajes nuevos.</p>
+        </div>
+
+        <div class="card">
+          <h2>Acciones rápidas</h2>
+          <button class="btn btn--primary">Agregar nota médica</button>
+          <button class="btn btn--ghost">Ver historial de pacientes</button>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;text-align:center">
+      <a href="../../pages/auth/login.html" class="btn btn--link">Cerrar sesión</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

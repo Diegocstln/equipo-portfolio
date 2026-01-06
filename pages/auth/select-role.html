@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elegir rol — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="card" role="region" aria-labelledby="sr-title">
+      <header class="brand">
+        <i class="brand__logo" aria-hidden="true"></i>
+        <span class="brand__name">VetCare</span>
+        <span class="badge" style="margin-left:auto">Roles</span>
+      </header>
+
+      <h1 class="h" id="sr-title">Elige cómo quieres entrar</h1>
+      <p class="p-muted">Esta pantalla solo aparece si tu cuenta tiene más de un rol asignado.</p>
+
+      <form class="form" method="post" action="/auth/switch-role">
+        <fieldset style="border:0;padding:0;margin:0" aria-describedby="roles-help">
+          <legend class="sr-only">Selecciona un rol</legend>
+
+          <label class="label" id="roles-help">Roles disponibles</label>
+          <div class="row">
+            <!-- Ejemplos; en tu backend renderiza dinámicamente los que aplique -->
+            <label class="btn btn--ghost" style="justify-content:flex-start">
+              <input type="radio" name="role" value="DOCTOR" required style="margin-right:10px" />
+              Doctor — acceso a expedientes y agenda propia
+            </label>
+            <label class="btn btn--ghost" style="justify-content:flex-start">
+              <input type="radio" name="role" value="RECEPCIONISTA" required style="margin-right:10px" />
+              Recepcionista — agenda general y citas
+            </label>
+            <label class="btn btn--ghost" style="justify-content:flex-start">
+              <input type="radio" name="role" value="DUENO" required style="margin-right:10px" />
+              Dueño — mis mascotas y citas
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="row">
+          <button class="btn btn--primary" type="submit">Continuar</button>
+          <a class="btn btn--link" href="/auth/logout">Salir</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crear cuenta — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="card" role="region" aria-labelledby="reg-title">
+      <header class="brand">
+        <i class="brand__logo" aria-hidden="true"></i>
+        <span class="brand__name">VetCare</span>
+        <span class="badge" style="margin-left:auto">Registro</span>
+      </header>
+
+      <!-- <div class="alert alert--error" role="alert">El correo ya está registrado.</div> -->
+      <!-- <div class="alert alert--success" role="alert">¡Revisa tu correo para verificar la cuenta!</div> -->
+
+      <h1 class="h" id="reg-title">Crea tu cuenta de dueño</h1>
+      <p class="p-muted">Recibirás un correo para verificar tu cuenta antes de ingresar.</p>
+
+      <form id = formulario class="form" method="post" action="/auth/register">
+      <div>
+        <label class="label" for="nombre">Nombre completo</label>
+        <input class="input" id="nombre" name="nombre" type="text" autocomplete="given-name"
+              placeholder="María" required />
+      </div>
+
+      <div>
+        <label class="label" for="apellidoP">Apellido paterno</label>
+        <input class="input" id="apellidoP" name="apellidoP" type="text" autocomplete="family-name"
+              placeholder="López" required />
+      </div>
+
+      <div>
+        <label class="label" for="apellidoM">Apellido materno</label>
+        <input class="input" id="apellidoM" name="apellidoM" type="text" autocomplete="family-name"
+              placeholder="Sepeda" required />
+      </div>
+
+      <div>
+        <label class="label" for="email">Correo electrónico</label>
+        <input class="input" id="email" name="email" type="email" inputmode="email"
+              autocomplete="email" placeholder="tucorreo@ejemplo.com" required />
+      </div>
+
+      <div>
+        <label class="label" for="telefono">Teléfono</label>
+        <input class="input" id="telefono" name="telefono" type="tel" autocomplete="tel"
+              placeholder="55 1234 5678" />
+      </div>
+
+      <div>
+        <label class="label2">Sexo</label>
+        <label>
+          <input type="radio" name="sexo" value="M" checked> M
+        </label>
+        <label>
+          <input type="radio" name="sexo" value="F"> F
+        </label>
+      </div>
+
+      <div>
+        <label class="label2" for="fechaNac">Fecha de nacimiento</label>
+        <input class="input2" id="fechaNac" name="fechaNac" type="date"
+              required />
+      </div>
+
+      <b>Mascotas</b>
+
+      <div>
+        <label class="label" for="numMascotas">Número de mascotas</label>
+        <input class="input" id="numMascotas" name="numMascotas" type="number" min="0"
+              placeholder="2" required />
+      </div>
+
+      <b>Dirección</b>
+
+      <div>
+        <label class="label" for="pais">País</label>
+        <input class="input" id="pais" name="pais" type="text" autocomplete="country-name"
+              placeholder="México" required />
+      </div>
+
+      <div>
+        <label class="label" for="estado">Estado</label>
+        <input class="input" id="estado" name="estado" type="text" autocomplete="address-level1"
+              placeholder="CDMX" required />
+      </div>
+
+      <div>
+        <label class="label" for="municipio">Delegación/Municipio</label>
+        <input class="input" id="municipio" name="municipio" type="text" autocomplete="address-level2"
+              placeholder="Azcapotzalco" required />
+      </div>
+
+      <div>
+        <label class="label" for="colonia">Colonia</label>
+        <input class="input" id="colonia" name="colonia" type="text"
+              placeholder="El Rosario" required />
+      </div>
+
+      <div>
+        <label class="label" for="calle">Calle/Avenida</label>
+        <input class="input" id="calle" name="calle" type="text"
+              placeholder="Av. 477" required />
+      </div>
+
+      <div>
+        <label class="label" for="numExt">Número exterior</label>
+        <input class="input" id="numExt" name="numExt" type="text"
+              placeholder="46" required />
+      </div>
+
+      <div>
+        <label class="label" for="numInt">Número interior (opcional)</label>
+        <input class="input" id="numInt" name="numInt" type="text"
+              placeholder="46" />
+      </div>
+
+      <div>
+        <label class="label" for="fotoPerfil">Ingresa una imagen de foto de perfil</label>
+        <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*">
+      </div>
+
+
+        <a href="register-owner2.html" class="btn btn--primary">Siguiente</a>
+
+      </form>
+
+      <div class="divider"></div>
+      <p class="footer">¿Ya tienes cuenta? <a href="./login.html">Inicia sesión</a>.</p>
+    </section>
+  </main>
+  <script src="../../assets/css/fun.js"></script>
+</body>
+</html>
