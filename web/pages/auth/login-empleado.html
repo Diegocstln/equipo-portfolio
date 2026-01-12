@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iniciar sesión (Empleado) — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="card" role="region" aria-labelledby="empleado-title">
+      <header class="brand">
+        <i class="brand__logo" aria-hidden="true"></i>
+        <a href="../auth/index.html" class="brand__name">PawHospital</a>
+        <span class="badge" style="margin-left:auto">Empleado</span>
+      </header>
+
+      <!-- Ejemplo de error (opcional)
+      <div class="alert alert--error" role="alert">Datos incorrectos.</div>
+      -->
+
+      <h1 class="h" id="empleado-title">Iniciar sesión</h1>
+      <p class="p-muted">Accede como empleado para gestionar agenda, pacientes y citas.</p>
+
+      <form class="form" method="post" action="/auth/login/empleado">
+        <div>
+          <label class="label" for="numEmpleado">Número de empleado</label>
+          <input class="input" id="numEmpleado" name="numEmpleado" type="text"
+                 inputmode="numeric" placeholder="Ej: 10234" required />
+        </div>
+
+        <div>
+          <label class="label" for="emailEmp">Correo institucional</label>
+          <input class="input" id="emailEmp" name="email" type="email"
+                 autocomplete="email" placeholder="empleado@vetcare.com" required />
+        </div>
+
+        <div>
+          <label class="label" for="passwordEmp">Contraseña</label>
+          <input class="input" id="passwordEmp" name="password" type="password"
+                 autocomplete="current-password" placeholder="••••••••••" required />
+        </div>
+
+        <div class="help">
+          <label style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)">
+            <input type="checkbox" name="remember" value="1" />
+            Recordarme
+          </label>
+          <a href="./forgot-password.html">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <div class="row">
+          <button class="btn btn--primary" type="submit">Entrar</button>
+          <a class="btn btn--ghost" href="./login-choice.html" role="button">Volver</a>
+        </div>
+
+        <input type="hidden" name="redirect" value="/dashboard/empleado" />
+      </form>
+
+      <div class="divider"></div>
+      <p class="footer">Si no tienes acceso, pide a un administrador que te registre.</p>
+    </section>
+  </main>
+</body>
+</html>
