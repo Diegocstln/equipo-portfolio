@@ -2,30 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hospital Veterinario — Inicio</title>
-  <meta name="description" content="Landing pública para hospital veterinario con navbar, secciones y botón de usuario con panel para iniciar sesión. 100% HTML+CSS, sin JS." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel de usuario — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
   <link rel="stylesheet" href="../../assets/css/style.css" />
-
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <header>
+    <header>
     <div class="container nav">
       <!-- Logo a la izquierda -->
-      <a class="brand" href="#inicio" aria-label="Inicio">
+      <a class="brand" href="../user/profile.html" aria-label="Inicio">
         <span aria-hidden="true" class="logo"></span>
-        <span class="name"><b>VetCare</b><small>Hospital</small></span>
+        <span class="name"><b>PawHospital</b></span>
       </a>
 
       <!-- Menú principal (centro) -->
       <nav class="menu" aria-label="Navegación principal">
-        <a href="#especialidad">Especialidad</a>
-        <a href="#doctores">Doctores</a>
-        <a href="#sobre">Sobre nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a href="index-user.html#especialidad">Especialidad</a>
+        <a href="index-user.html#doctores">Doctores</a>
+        <a href="index-user.html#sobre">Sobre nosotros</a>
+        <a href="index-user.html#contacto">Contacto</a>
       </nav>
-
+   
       <!-- Botón de usuario con menú/mini tabla (derecha) -->
       <div class="user">
         <!-- El botón es un <button> dentro de un <form> con tabindex para permitir :focus-within sin JS -->
@@ -36,110 +34,52 @@
         </button>
         <!-- Panel sin JS: aparece al enfocar el contenedor .user -->
         <div class="panel" role="dialog" aria-label="Opciones de cuenta">
-          <table class="mini-table">
-            <thead>
-              <tr><th colspan="2">Acceso</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Estado</td>
-                <td><span class="muted">No has iniciado sesión</span></td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="2">
-                  <a class="btn" href="./login.html">Iniciar sesión</a>
-                </td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
+            <table class="mini-table">
+                <thead><tr><th colspan="2">Cuenta (Dueño)</th></tr></thead>
+                <tbody>
+                <tr><td>Mis mascotas</td><td><a class="btn" href="../dashboard/owner.html">Abrir</a></td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2"><a class="btn" href="../auth/index.html">Cerrar sesión</a></td></tr></tfoot>
+            </table>
+            </div>
       </div>
     </div>
   </header>
-
-  <!-- Hero / portada -->
-  <section id="inicio" class="hero">
-    <div class="container wrap">
-      <div class="card">
-        <h1>Atención veterinaria integral con calidad humana</h1>
-        <p>Urgencias 24/7, hospitalización, cirugía, laboratorio y especialidades para perros y gatos.</p>
-      </div>
-      <div class="illus">Área para imagen o foto del hospital</div>
-    </div>
-  </section>
-
-  <!-- Especialidad -->
-  <section id="especialidad">
-    <div class="container stack">
-      <h2>Especialidad</h2>
+  <main class="auth-shell">
+    <section class="dashboard">
+      <h1>👨‍⚕️ Mis mascotas</h1>
       <div class="cards">
-        <div class="card stack">
-          <b>Cirugía</b>
-          <span class="muted">Tejidos blandos, esterilización, ortopedia básica.</span>
+        <div class="card">
+          <ul>
+            <li>Max (Perro) 
+                <br>Ultima cita: 22 de septiembre de 2025
+                <br>Diagnostico: Gripe
+                <br>Tratamiento: Reposo e hidratacion.
+            </li>
+            <li>Max (Perro) 
+                <br>Ultima cita: 22 de septiembre de 2025
+                <br>Diagnostico: Gripe
+                <br>Tratamiento: Reposo e hidratacion.
+            </li>
+            <li>16:00 — Rocky (Perro) — Vacunación</li>
+          </ul>
         </div>
-        <div class="card stack">
-          <b>Medicina interna</b>
-          <span class="muted">Diagnóstico integral y planes de tratamiento.</span>
+
+        <div class="card">
+          <h2>Mensajes</h2>
+          <p>No tienes mensajes nuevos.</p>
         </div>
-        <div class="card stack">
-          <b>Imagenología</b>
-          <span class="muted">Rayos X y ultrasonido con interpretación.</span>
+
+        <div class="card">
+          <h2>Acciones rápidas</h2>
+          <a class="btn btn--link" href="Registrar-mascota.html">Registrar mascota</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Doctores -->
-  <section id="doctores">
-    <div class="container stack">
-      <h2>Doctores</h2>
-      <div class="cards">
-        <div class="card stack">
-          <b>Dra. Ana López</b>
-          <span class="muted">Cirugía y urgencias</span>
-        </div>
-        <div class="card stack">
-          <b>Dr. Carlos Ruiz</b>
-          <span class="muted">Medicina interna</span>
-        </div>
-        <div class="card stack">
-          <b>Dra. Sofía Méndez</b>
-          <span class="muted">Imagenología</span>
-        </div>
+      <div style="margin-top:20px;text-align:center">
+      <a href="../../pages/auth/login.html" class="btn btn--link">Cerrar sesión</a>
       </div>
-    </div>
-  </section>
-
-  <!-- Sobre nosotros -->
-  <section id="sobre">
-    <div class="container stack">
-      <h2>Sobre nosotros</h2>
-      <div class="card">
-        <p class="muted">Somos un hospital veterinario con foco en medicina preventiva y atención de urgencias. Nuestro equipo combina experiencia clínica con calidez humana.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto">
-    <div class="container stack">
-      <h2>Contacto</h2>
-      <div class="card stack">
-        <div>Tel: <b>(55) 1234 5678</b></div>
-        <div>Dirección: <b>Av. Siempre Viva 123, CDMX</b></div>
-        <div class="muted">Horarios: LunDom 24/7</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container foot">
-      <small>© 2025 VetCare Hospital</small>
-      <small class="muted">Hecho con HTML + CSS (sin JS)</small>
-    </div>
-  </footer>
+    </section>
+  </main>
 </body>
-</html> 
+</html>
