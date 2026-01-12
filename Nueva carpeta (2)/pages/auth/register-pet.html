@@ -14,7 +14,7 @@
       <!-- Logo a la izquierda -->
       <a class="brand" href="#inicio" aria-label="Inicio">
         <span aria-hidden="true" class="logo"></span>
-        <span class="name"><b>PawHospital</b><small>Hospital</small></span>
+        <span class="name"><b>PawHospital</b></span>
       </a>
 
       <!-- Menú principal (centro) -->
@@ -50,7 +50,7 @@
     <section class="card" role="region" aria-labelledby="reg-title">
       <div class="brand">
         <i class="brand__logo" aria-hidden="true"></i>
-        <span class="brand__name">PawHospital</span>
+        <a href="../auth/index.html"><span class="brand__name">PawHospital</span></a>
         <span class="badge2" style="margin-left:auto">Registro</span>
       </div>
       <!-- <div class="alert alert--error" role="alert">El correo ya está registrado.</div> -->
@@ -113,10 +113,16 @@
         </div>
 
         <div>
-          <label class="label2" for="Date">Fecha de nacimiento</label>
-          <input class="input2" id="Date" name="Date" type="text"  
-                 placeholder="01/01/01" required />
-        </div>
+  <label class="label2" for="fechaNac">Fecha de nacimiento</label>
+  <input
+    class="input2"
+    id="fechaNac"
+    name="fechaNac"
+    type="date"
+    required
+  />
+</div>
+
 
         <div>
           <label class="label2">¿Tu mascota está esterilizada?</label>
