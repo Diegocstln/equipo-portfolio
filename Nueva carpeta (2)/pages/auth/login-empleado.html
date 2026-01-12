@@ -2,45 +2,63 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VetCare | Login Empleado</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iniciar sesión (Empleado) — VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
 </head>
 <body>
-  <main class="auth">
-    <section class="card">
-      <header class="card__header">
-        <a class="back" href="index.html">← Volver</a>
-        <h1 class="brand">VetCare</h1>
-        <p class="muted">Inicia sesión como <strong>empleado</strong></p>
+  <main class="auth-shell">
+    <section class="card" role="region" aria-labelledby="empleado-title">
+      <header class="brand">
+        <i class="brand__logo" aria-hidden="true"></i>
+        <span class="brand__name">VetCare</span>
+        <span class="badge" style="margin-left:auto">Empleado</span>
       </header>
 
-      <form class="card__body form" action="#" method="post">
-        <label class="field">
-          <span class="field__label">Número de empleado</span>
-          <input class="field__input" type="text" name="id_empleado" inputmode="numeric" placeholder="Ej. 1023" required />
-        </label>
+      <!-- Ejemplo de error (opcional)
+      <div class="alert alert--error" role="alert">Datos incorrectos.</div>
+      -->
 
-        <label class="field">
-          <span class="field__label">Correo</span>
-          <input class="field__input" type="email" name="correo" placeholder="empleado@vetcare.com" required />
-        </label>
+      <h1 class="h" id="empleado-title">Iniciar sesión</h1>
+      <p class="p-muted">Accede como empleado para gestionar agenda, pacientes y citas.</p>
 
-        <label class="field">
-          <span class="field__label">Contraseña</span>
-          <input class="field__input" type="password" name="contrasena" placeholder="••••••••" required />
-        </label>
-
-        <button class="btn btn--primary" type="submit">Entrar</button>
-
-        <div class="links">
-          <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+      <form class="form" method="post" action="/auth/login/empleado">
+        <div>
+          <label class="label" for="numEmpleado">Número de empleado</label>
+          <input class="input" id="numEmpleado" name="numEmpleado" type="text"
+                 inputmode="numeric" placeholder="Ej: 10234" required />
         </div>
+
+        <div>
+          <label class="label" for="emailEmp">Correo institucional</label>
+          <input class="input" id="emailEmp" name="email" type="email"
+                 autocomplete="email" placeholder="empleado@vetcare.com" required />
+        </div>
+
+        <div>
+          <label class="label" for="passwordEmp">Contraseña</label>
+          <input class="input" id="passwordEmp" name="password" type="password"
+                 autocomplete="current-password" placeholder="••••••••••" required />
+        </div>
+
+        <div class="help">
+          <label style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)">
+            <input type="checkbox" name="remember" value="1" />
+            Recordarme
+          </label>
+          <a href="./forgot-password.html">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <div class="row">
+          <button class="btn btn--primary" type="submit">Entrar</button>
+          <a class="btn btn--ghost" href="./login-choice.html" role="button">Volver</a>
+        </div>
+
+        <input type="hidden" name="redirect" value="/dashboard/empleado" />
       </form>
 
-      <footer class="card__footer">
-        <p class="tiny muted">Acceso interno • VetCare</p>
-      </footer>
+      <div class="divider"></div>
+      <p class="footer">Si no tienes acceso, pide a un administrador que te registre.</p>
     </section>
   </main>
 </body>
