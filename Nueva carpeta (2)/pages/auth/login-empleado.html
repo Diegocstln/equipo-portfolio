@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VetCare | Login Empleado</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="auth">
+    <section class="card">
+      <header class="card__header">
+        <a class="back" href="index.html">← Volver</a>
+        <h1 class="brand">VetCare</h1>
+        <p class="muted">Inicia sesión como <strong>empleado</strong></p>
+      </header>
+
+      <form class="card__body form" action="#" method="post">
+        <label class="field">
+          <span class="field__label">Número de empleado</span>
+          <input class="field__input" type="text" name="id_empleado" inputmode="numeric" placeholder="Ej. 1023" required />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Correo</span>
+          <input class="field__input" type="email" name="correo" placeholder="empleado@vetcare.com" required />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Contraseña</span>
+          <input class="field__input" type="password" name="contrasena" placeholder="••••••••" required />
+        </label>
+
+        <button class="btn btn--primary" type="submit">Entrar</button>
+
+        <div class="links">
+          <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+        </div>
+      </form>
+
+      <footer class="card__footer">
+        <p class="tiny muted">Acceso interno • VetCare</p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
