@@ -1,0 +1,298 @@
+﻿id_comp,nom_comp
+1,Fenbendazol
+2,Excipiente
+3,Morbillivirus (moquilllo)
+4,Adenovirus (hepatitis)
+5,Leptospira canicola
+6,Leptospira grippotyphosa
+7,Leptospira icterohaemorrhagiae
+8,Leptospira pomona
+9,Leptospira tarassovi
+10,Leptospira wolffi
+11,Virus de Moquillo Canino
+12,Clorhidrato de Epinefrina
+13,Clorhidrato de Procaina
+14,Vehiculo
+15,Imidacloprid
+16,Moxidectina
+17,Permetrina
+18,Pamoato de pirantel
+19,Dexametasona
+20,Isonicotinato de dexametasona
+21,Fosfato sodico de dexametasona
+22,Sulfato de neomicina
+23,Cefixime
+24,Bromhexina
+25,Guaifenesina
+26,Meloxicam
+27,Metronidazol
+28,Amikacina sulfato
+29,Dextrosa
+30,Cloruro de calcio
+31,Cloruro de potasio
+32,Sulfato de magnesio
+33,Acetato de sodio trihidratado
+34,Hidrocloruro de L-histidina
+35,DL-metionina
+36,DL-triptófano
+37,Hidrocloruro de L-cisteína
+38,L-Treonina
+39,DL-isoleucina
+40,L-Arginina como clorhidrato
+41,DL-fenilalanina
+42,DL-valina
+43,L-Lisina como Clorhidrato
+44,L-leucina
+45,Glutamato monosódico
+46,Vitamina B1 (tiamina clorhidrato)
+47,Vitamina B2 (riboflavina 5 fosfato)
+48,Vitamina B6 (piridoxina clorhidrato)
+49,Vitamina B12 (cianocobalamina)
+50,Nicotinamida
+51,Ampicilina sódica
+52,Estreptomicina sulfato
+53,Flumetasona
+54,Aminoácidos esenciales y no esenciales (mezcla)
+55,Amprolio HCl
+56,Boldenona undecilenato
+57,Dipirona
+58,Oxitetraciclina HCl
+59,Diaceturato de Dibenzamidina
+60,Penicilina G procaínica
+61,Dihidroestreptomicina
+62,Pirimetamina
+63,Sulfadoxina
+64,Ivermectina
+65,Difenhidramina
+66,Cloruro de benzalconio
+67,Clorhexidina
+68,Virus de la rabia inactivado
+69,Coumaphos
+70,Ciclosporina
+71,Azul de metileno
+72,Clorfenvinfós
+73,Crotamitón
+74,Toltrazuril
+75,Flumetrina
+76,Enrofloxacina
+77,Extracto herbal fortificante
+78,Levamisol HCl
+79,Benzocaína
+80,Dexametasona fosfato
+81,Amitraz
+82,Teofilina
+83,Calcio gluconato
+84,Extracto Ginkgo biloba
+85,Extracto Valeriana
+86,Complejo multivitamínico adulto
+87,Complejo multivitamínico cachorro
+88,Complejo multivitamínico senior
+89,Complejo digestivo probiótico
+90,Extracto hepático protector
+91,Aceite de pescado Omega 3
+92,Complejo reproductivo vitamínico
+93,Complejo dermatológico
+94,Ketorolaco base
+95,Progesterona
+96,Prednisolona
+97,Penicilina G
+98,Oxitocina
+99,Procain-estreptomicina
+100,Cefalexina
+101,Hierro dextrán
+102,Hormona uterotónica
+103,Virus atenuado parvovirus canino
+104,Ranitidina
+105,Virus atenuado moquillo/parvo
+106,Virus atenuado moquillo/parvo/hepatitis
+107,Virus atenuado C4/CV
+108,Virus atenuado C7
+109,Virus atenuado C6/CV
+110,Virus atenuado C8
+111,Virus atenuado C9
+112,Bordetella bronchiseptica atenuada
+113,Ambroxol
+114,Clenbuterol
+115,Dextrometorfano
+116,Extracto vegetal REUGOL
+117,Oxitetraciclina
+118,Base shampoo
+119,Acondicionador
+120,Aceite de jojoba
+121,Aceite de visón
+122,Aloe vera
+123,Eucalipto
+124,Germicida
+125,Triclosán
+126,Vitamina E
+127,Zinc
+128,Biotina
+129,Aceite de coco
+130,Vitamina B5
+131,Colágeno
+132,Keratina
+133,Manzanilla
+134,Romero
+135,Menta
+136,Árbol de té
+137,Avena
+138,Extracto de algas
+139,Extracto de bambú
+140,Lauril éter sulfato sódico
+141,Dietanolamida de ácidos‑grasos de coco
+142,Derivados de amina grasa
+143,Pirenona 6‑30N
+144,Acondicionadores
+145,Sildenafil citrato
+146,Sulfadiazina
+147,Trimetoprim
+148,Sulfametoxazol
+149,Nimesulida
+150,Piretrinas
+151,Butóxido de piperonilo
+152,Perfume
+153,Agua
+154,Alantoína
+155,Jabón de coco neutro
+156,Acíbar de zábila
+157,Aceite de limón
+158,Clorofila
+159,Aceite esencial de cajeput
+160,Surfactantes
+161,Fragancia
+162,Vitamina A
+163,Vitamina D
+164,Acetonido de fluocinolona
+165,Propoxur
+166,Ciclosporina A
+167,Agentes saponificantes
+168,Conservador
+169,Extracto de avena
+170,Colorante
+171,Cefepime
+172,Óxido de calcio
+173,Óxido de hierro
+174,Óxido de aluminio
+175,Óxido de magnesio
+176,Óxido de silicio
+177,Febantel
+178,Prazicuantel
+179,Levotiroxina sódica
+180,Sulfato de atropina
+181,Nipagin
+182,Nipasol
+183,Bisulfito de sodio
+184,Salicilato de metilo
+185,Aceite de eucalipto
+186,Aceite de trementina
+187,Ácido fénico
+188,Penicilina G benzatínica
+189,Sulfatiazol
+190,Sulfanilamida
+191,Yodoclorohidroxiquinoleína
+192,Alcanfor
+193,Óxido de zinc
+194,Allium sativum
+195,DESCONOCIDO_209
+196,DESCONOCIDO_210
+197,DESCONOCIDO_211
+198,DESCONOCIDO_229
+199,Amoxicilina
+200,Ceftazidima
+201,Gentamicina
+202,Doxiciclina
+203,Marbofloxacina
+204,Azitromicina
+205,Cloranfenicol
+206,Trimetoprima
+207,Ciprofloxacina
+208,Ampicilina
+209,Tetraciclina
+210,Neomicina
+211,Claritromicina
+212,Praziquantel
+213,Albendazol
+214,Pirantel
+215,Levamisol
+216,Mebendazol
+217,Piperazina
+218,Nitazoxanida
+219,Tiabendazol
+220,Oxfendazol
+221,Vitamina D3
+222,Vitamina K
+223,Tiamina
+224,Riboflavina
+225,Niacina
+226,Vitamina B6
+227,Vitamina B12
+228,Vitamina C
+229,Carprofeno
+230,Ketoprofeno
+231,Flunixina
+232,Piroxicam
+233,Diclofenaco
+234,Clotrimazol
+235,Ketoconazol
+236,Itraconazol
+237,Fluconazol
+238,Miconazol
+239,Terbinafina
+240,Nistatina
+241,Gluconato de Calcio
+242,Calcitriol
+243,Atropina
+244,Butorfanol
+245,Tramadol
+246,Omeprazol
+247,Metoclopramida
+248,Lactulosa
+249,Silimarina
+250,Ácido Ascórbico
+251,Ácido Fólico
+252,Pantotenato
+253,Colecalciferol
+254,Doxiciclina clorhidrato
+255,Amoxicilina trihidratada
+256,Ácido clavulánico
+257,Azitromicina dihidratada
+258,Ceftazidima pentahidratada
+259,Cefalexina monohidratada
+260,Gentamicina sulfato
+261,Tilosina tartrato
+262,Lincomicina clorhidrato
+263,Ampicilina trihidratada
+264,Tetraciclina clorhidrato
+265,Ciprofloxacina clorhidrato
+266,Levamisol clorhidrato
+267,Pirantel pamoato
+268,Selamectina
+269,Fipronil
+270,Anfotericina B
+271,Voriconazol
+272,Terbinafina clorhidrato
+273,Retinol (Vitamina A)
+274,Colecalciferol (Vitamina D3)
+275,Tocoferol (Vitamina E)
+276,Fitomenadiona (Vitamina K)
+277,Tiamina (Vitamina B1)
+278,Riboflavina (Vitamina B2)
+279,Niacina (Vitamina B3)
+280,Piridoxina (Vitamina B6)
+281,Cianocobalamina (Vitamina B12)
+282,Ácido ascórbico (Vitamina C)
+283,Biotina (Vitamina B7)
+284,Ácido fólico (Vitamina B9)
+285,Butorfanol tartrato
+286,Tramadol clorhidrato
+287,Prednisolona fosfato sódico
+288,Oxitocina sintética
+289,Metoclopramida clorhidrato
+290,Ranitidina clorhidrato
+291,Silimarina extracto
+292,L-carnitina
+293,Lactobacillus acidophilus
+294,Bifidobacterium bifidum
+295,Amilasa
+296,Proteasa
+297,Lipasa

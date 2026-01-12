@@ -1,0 +1,57 @@
+﻿id_lab,nom_lab,id_pais,telefono,email,sitio_web
+1,Senosiain,1,(55) 5280-4999,N/D,https://www.senosiain.mx
+2,Chinoin,México (fundado en Hungría 1912),(55) 5262-3100<br>(465) 9581804,ventas@chinoin.com,https://www.chinoin.com
+3,Aranda,1,(442) 209-7400,N/D,https://www.aranda.vet
+4,Elanco Salud Animal,2,800 000 7387<br>(33) 3819-5534,digital_mexico@elancoah.com,https://www.elanco.com
+5,Mederi Lab,1,N/D,N/D,N/D
+6,Alpha Chem,1,N/D,N/D,N/D
+7,AgrovET,1,N/D,N/D,N/D
+8,AgrovETMarket,1,N/D,N/D,N/D
+9,Panavet,1,N/D,N/D,https://www.panavet.com.mx
+10,Diprofaq,1,N/D,N/D,N/D
+11,Sanfer,1,N/D,contactoAH@sanfer.com.mx,https://www.sanfersaludanimal.com
+12,Salud y Bienestar,1,N/D,N/D,N/D
+13,Petmedica,1,(33) 3682-2035,N/D,https://www.petmedica.mx
+14,Halvet,1,(33) 3336-8045<br>(33) 3615-1118,contacto@halvet.mx,http://www.halvet.com
+15,Riverfarma,1,(55) 6389-6687<br>(55) 6389-6688,riverfarma@riverfarma.com.mx,N/D
+16,Andoci,1,(55) 5676-1920<br>(55) 5676-8040,laboratorios@andoci.com.mx,https://www.andoci.com.mx
+17,Cheminova,3,N/D,N/D,N/D
+18,Salud Animal,1,N/D,N/D,N/D
+19,APC,1,(33) 3587-9481<br>(33) 3634-2926,diego.sangeado@apcproteins.com,https://www.apcproteins.com
+20,Parfarm,1,(55) 5538-0040,N/D,https://www.parfarm.com
+21,Biovet,1,N/D,N/D,N/D
+22,Vets Pharma,1,(55) 4370-5139,esantiago@petspharma.com.mx,https://vetspharma.com.mx
+23,Fiori,1,N/D,N/D,N/D
+24,Sehyex,1,(55) 1668-1623<br>(55) 1668-1618,ventas@sehyex.com,https://sehyex.com
+25,AnimalHealth México,1,N/D,N/D,N/D
+26,GENOPHARM,1,N/D,N/D,N/D
+27,BOEHRINGER,4,(33) 3668-8000,N/D,https://www.boehringer-ingelheim.com/mx
+28,Zoetis,2,+1-888-963-8471,contacto@zoetis.com,www.zoetis.com
+29,Vetoquinol,5,+33-2-33-38-33-00,info@vetoquinol.com,www.vetoquinol.com
+30,ReptiVet,6,+49-30-1234567,contacto@reptivet.de,www.reptivet.com
+31,ExoticPharma,7,+44-20-7123-4567,info@exoticpharma.co.uk,www.exoticpharma.com
+32,HerpMed,2,+1-305-555-0123,support@herpmed.com,www.herpmed.com
+33,Boehringer Ingelheim,6,+49-6132-770,info@boehringer.com,www.boehringer-ingelheim.com
+34,Elanco,2,+1-317-276-2000,contact@elanco.com,www.elanco.com
+35,Bayer Animal Health,6,+49-214-30-1,info@bayer.com,www.bayer.com
+36,Merial,5,+33-4-72-72-30-00,contacto@merial.com,www.merial.com
+37,Virbac,5,+33-4-92-08-73-00,info@virbac.com,www.virbac.com
+38,Ceva Salud Animal,5,+33-5-45-90-40-00,ceva@ceva.com,www.ceva.com
+39,Dechra,7,+44-1606-810700,info@dechra.com,www.dechra.com
+40,Pfizer Animal Health,2,+1-212-733-2323,contact@pfizer.com,www.pfizer.com
+41,Norbrook,8,+353-42-966-6222,info@norbrook.com,www.norbrook.com
+42,Agrolabo,9,+39-011-63-03-456,info@agrolabo.com,www.agrolabo.com
+43,Dopharma,10,+31-88-126-2600,info@dopharma.com,www.dopharma.com
+44,Ultravet,1,+52-33-3134-2000,contacto@ultravet.mx,www.ultravet.mx
+45,Labyes,11,+34-91-661-8100,info@labyes.com,www.labyes.com
+46,Alfasan,10,+31-348-543-800,info@alfasan.com,www.alfasan.com
+47,Vencofarma,11,+34-91-661-9900,venco@vencofarma.es,www.vencofarma.es
+48,Kyron,12,+27-11-707-8188,info@kyronlab.co.za,www.kyronlab.co.za
+49,Vetpharma,13,+54-11-4756-8900,info@vetpharma.com.ar,www.vetpharma.com.ar
+50,ReptileRelief,14,+61-2-9999-8888,contact@reptilerelief.com.au,www.reptilerelief.com.au
+51,ExoVet Pro,15,+1-416-555-7890,info@exovetpro.ca,www.exovetpro.ca
+52,HerpCare Labs,2,+1-954-555-3456,support@herpcare.com,www.herpcare.com
+53,AvianMed,6,+49-30-1234567,contacto@avianmed.de,www.avianmed.com
+54,BirdCare Labs,2,+1-305-555-0123,support@birdcare.com,www.birdcare.com
+55,AvianHealth Pro,14,+61-2-9999-8888,contact@avianhealth.com.au,www.avianhealth.com.au
+56,FeatherCare Labs,2,+1-954-555-3456,support@feathercare.com,www.feathercare.com

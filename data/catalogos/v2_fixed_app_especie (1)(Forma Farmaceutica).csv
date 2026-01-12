@@ -1,0 +1,50 @@
+﻿id_forma,nom_forma,Descripcion
+1,Granulado,Partículas sólidas pequeñas que se disuelven en agua para administración oral.
+2,Suspensión oral,Líquido con partículas en suspensión para tomar por la boca.
+3,Polvo,"Partículas sólidas finamente divididas, generalmente para mezclar o espolvorear."
+4,Inyectable,Preparación estéril para aplicar mediante jeringa.
+5,Solución inyectable,"Líquido estéril claro para inyectar (subcutánea, intramuscular o intravenosa)."
+6,Solución tópica,Líquido para aplicar sobre la piel.
+7,Tabletas,Forma sólida compacta para administración oral.
+8,Suspensión inyectable,Líquido con partículas en suspensión para inyectar.
+9,Solución oftálmica,Gotas estériles para aplicar en los ojos.
+10,Jarabe,Líquido espeso y dulce para administración oral.
+11,Cápsulas,Cubierta de gelatina que contiene el medicamento en polvo o líquido.
+12,Polvo oral,Polvo formulado específicamente para mezclar con alimento o agua.
+13,Polvo para reconstituir,Polvo que debe mezclarse con líquido antes de usar.
+14,Polvo para inyección,Polvo estéril que se reconstituye para inyectar.
+15,Spray,Aerosol o atomizador para aplicación tópica u oral.
+16,Solución,Líquido homogéneo con el medicamento disuelto completamente.
+17,Jabón,Producto de limpieza con propiedades medicinales.
+18,Ungüento,Preparación semisólida y grasa para aplicación cutánea.
+19,Concentrado emulsionable,Líquido concentrado que se diluye en agua formando emulsión.
+20,Shampoo,Producto de limpieza para el pelaje con acción terapéutica.
+21,Solucion Oleosa,Medicamento disuelto en aceite.
+22,Solución dérmica,Líquido para aplicar específicamente en la piel.
+23,Tabletas Palatables,Tabletas con sabor agradable para facilitar la administración.
+24,Gel oral,Preparación gelatinosa para aplicar en la boca o encías.
+25,Crayón,Barra sólida para marcar o aplicar directamente.
+26,Solución oftálmica,Gotas para los ojos (duplicado del ID 9).
+27,Solución oleosa inyectable,Medicamento en aceite para inyectar.
+28,Tabletas orales,Tabletas formuladas específicamente para vía oral.
+29,Suspensión ótica,Gotas con partículas en suspensión para los oídos.
+30,Crema tópica,Emulsión semisólida para aplicar en la piel.
+31,Solución concentrada,Líquido concentrado que debe diluirse antes de usar.
+32,Tabletas masticables ,"Tabletas diseñadas para ser masticadas, generalmente con sabor."
+33,Collar,Dispositivo que se coloca en el cuello liberando medicamento gradualmente.
+34,DESCONOCIDO_34,FALTANTE EN ORIGEN
+35,DESCONOCIDO_35,FALTANTE EN ORIGEN
+36,DESCONOCIDO_36,FALTANTE EN ORIGEN
+37,DESCONOCIDO_37,FALTANTE EN ORIGEN
+38,Inyectable,Solución estéril para administración parenteral
+39,Suspensión Oral,Líquido para administración por vía oral
+40,Tableta,Forma sólida oral
+41,Polvo,Polvo para reconstituir o administrar directamente
+42,Crema/Pomada,Aplicación tópica externa
+43,Gotas,Solución en gotas para diversas vías
+44,Cápsula,Medicamento encapsulado
+45,Gel,Forma semisólida
+46,Aerosol/Spray,Aplicación por aspersión
+47,Solución,Solución líquida concentrada
+48,Jarabe,Solución oral edulcorada
+49,Pasta,Preparado semisólido oral

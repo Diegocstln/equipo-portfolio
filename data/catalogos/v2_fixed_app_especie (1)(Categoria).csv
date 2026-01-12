@@ -1,0 +1,48 @@
+﻿id_cat,nom_cat,Descripcion
+1,Antiparasitario,"Elimina o controla parásitos internos (helmintos) y externos (pulgas, garrapatas, ácaros)."
+2,Antibiótico,Combate infecciones bacterianas al eliminar o inhibir el crecimiento de bacterias.
+3,Antiinflamatorio,"Reduce la inflamación, hinchazón y dolor en tejidos afectados."
+4,Analgésico,Alivia o elimina el dolor sin causar pérdida de conciencia.
+5,Antifúngico,"Trata infecciones causadas por hongos en piel, uñas u órganos internos."
+6,Antiviral,Combate infecciones virales al inhibir la replicación de virus.
+7,Antipirético,Reduce la fiebre al actuar sobre el centro termorregulador del organismo.
+8,Vitamina / Suplemento,Aporta nutrientes esenciales para complementar la dieta y mejorar la salud general.
+9,Antihistamínico,"Bloquea los efectos de la histamina, aliviando alergias y reacciones alérgicas."
+10,Anestésico,Produce pérdida de sensibilidad (local) o inconsciencia (general) para procedimientos.
+11,Antiséptico / Desinfectante,Elimina o inhibe microorganismos en tejidos vivos (antiséptico) o superficies (desinfectante).
+12,Cardiovascular,"Trata enfermedades del corazón y sistema circulatorio, regula presión arterial."
+13,Hormonal / Endocrino,Regula o reemplaza hormonas para tratar desórdenes del sistema endocrino.
+14,Digestivo / Gastrointestinal,"Trata problemas del sistema digestivo como gastritis, úlceras o mala digestión."
+15,Respiratorio,"Trata afecciones del sistema respiratorio como tos, bronquitis o asma."
+16,Urológico / Renal,"Trata problemas del sistema urinario y riñones, como infecciones o cálculos."
+17,Oftálmico,Trata enfermedades o infecciones de los ojos y estructuras oculares.
+18,Otolaringológico (oído),"Trata infecciones, inflamaciones o problemas del oído y conducto auditivo."
+19,Dermatológico (piel),"Trata afecciones de la piel como dermatitis, heridas, infecciones cutáneas."
+20,Vacuna,Estimula el sistema inmune para crear defensas contra enfermedades específicas.
+21,Reconstituyente / Fortificante,"Recupera la fuerza y vitalidad después de enfermedad, cirugía o debilidad."
+22,Sedante / Tranquilizante,"Calma y reduce la ansiedad o agitación, produce relajación sin anestesia profunda."
+23,Anticonvulsivo / Neurológico,Previene o controla convulsiones y trata trastornos del sistema nervioso.
+24,Antiemético (contra vómito),Previene o detiene las náuseas y el vómito.
+25,Antidiarreico,"Controla y detiene la diarrea, normaliza las heces."
+26,Anticoagulante,Previene la formación de coágulos sanguíneos o disuelve coágulos existentes.
+27,Rehidratante / Electrolito,"Repone líquidos y minerales perdidos por deshidratación, diarrea o vómito."
+28,Antiprotozoario,"Elimina protozoarios parásitos como Giardia, Coccidia o Toxoplasma."
+29,Endectocida (interno y externo),Elimina parásitos internos y externos simultáneamente con un solo medicamento.
+30,Hepatoprotector,"Protege y ayuda a regenerar las células del hígado, mejora función hepática."
+31,Antibiótico,Medicamentos para combatir infecciones bacterianas
+32,Antiparasitario,Tratamiento contra parásitos internos y externos
+33,Vitaminas y Suplementos,Complementos nutricionales esenciales
+34,Antiinflamatorio,Reduce inflamación y dolor
+35,Antifúngico,Tratamiento contra hongos
+36,Analgésico,Control del dolor
+37,Calcio y Minerales,Suplementos de calcio y minerales esenciales
+38,Antiprotozoario,Tratamiento contra protozoarios
+39,Corticoesteroide,Potente antiinflamatorio e inmunosupresor
+40,Solución Hidratante,Fluidos para rehidratación
+41,Antibiótico Tópico,Antibióticos de uso externo
+42,Desparasitante Externo,Para ácaros y garrapatas
+43,Probiótico,Flora intestinal beneficiosa
+44,Enzimas Digestivas,Ayuda a la digestión
+45,Inmunoestimulante,Refuerza el sistema inmune
+46,Antifúngico,Tratamiento contra hongos y levaduras
+47,Antiparasitario Externo,Para ácaros y piojos
