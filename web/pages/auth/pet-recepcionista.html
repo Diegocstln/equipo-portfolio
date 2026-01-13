@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registrar mascota - VetCare</title>
+    <link rel="stylesheet" href="../../assets/css/auth.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <!-- Logo a la izquierda -->
+            <a class="brand" href="#inicio" aria-l abel="Inicio">
+                <span aria-hidden="true" class="logo"></span>
+                <span class="name"><b>PawHospital</b></span>
+            </a>
+
+            <!-- Menú principal (centro) -->
+            <nav class="menu" aria-label="Navegación principal">
+                <a></a>
+                <a href="index-user.html#doctores"></a>
+                <a href="index-user.html#sobre"></a>
+                <a href="index-user.html#contacto"></a>
+            </nav>
+
+            <!-- Botón de usuario con menú/mini tabla (derecha) -->
+            <div class="user">
+                <!-- El botón es un <button> dentro de un <form> con tabindex para permitir :focus-within sin JS -->
+                <button class="trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <span>Cuenta</span>
+                    <span class="chev" aria-hidden="true">▾</span>
+                </button>
+                <!-- Panel sin JS: aparece al enfocar el contenedor .user -->
+                <div class="panel" role="dialog" aria-label="Opciones de cuenta">
+                    <table class="mini-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Cuenta (Recepcionista)</th>
+                            </tr>
+                        </thead>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"><a class="btn" href="login.html">Cerrar sesión</a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="auth-shell">
+        <section class="card" role="region" aria-labelledby="reg-title">
+            <div class="brand">
+                <i class="brand__logo" aria-hidden="true"></i>
+                <a href="../dashboard/recepcion.html" class="brand__name">PawHospital</a>
+                <span class="badge2" style="margin-left:auto">Registro</span>
+            </div>
+            <!-- <div class="alert alert--error" role="alert">El correo ya está registrado.</div> -->
+            <!-- <div class="alert alert--success" role="alert">¡Revisa tu correo para verificar la cuenta!</div> -->
+
+            <h1 class="h" id="reg-title">Ingresa los datos de tu mascota</h1>
+
+            <form class="form" method="post" action="/auth/register">
+
+                <div>
+                    <label class="label2" for="nombre">Nombre</label>
+                    <input class="input" id="nombre" name="nombre" type="text" placeholder="Firulais" required />
+                </div>
+
+
+                <div>
+                    <label class="label2" for="especie">Especie</label>
+                    <select id="especie" name="especie" required>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="reptil">Reptil</option>
+                        <option value="ave">Ave</option>
+                    </select>
+                </div>
+
+                <label class="label2">Raza</label>
+
+                <div id="contenedor-raza">
+                    <div class="raza" id="raza-perro">
+                        <select id="select-Perro" name="raza">
+                            <option value="akita_inu">Akita Inu</option>
+                            <option value="pastor_aleman">Pastor Alemán</option>
+                            <option value="labrador_retriever">Labrador Retriever</option>
+                            <option value="bulldog_frances">Bulldog Francés</option>
+                            <option value="pug">Pug</option>
+                            <option value="chihuahua">Chihuahua</option>
+                            <option value="dalmata">Dálmata</option>
+                            <option value="husky_siberiano">Husky Siberiano</option>
+                            <option value="rottweiler">Rottweiler</option>
+                            <option value="dobermann">Dobermann</option>
+                            <option value="golden_retriever">Golden Retriever</option>
+                            <option value="pastor_belga">Pastor Belga</option>
+                            <option value="yorkshire_terrier">Yorkshire Terrier</option>
+                            <option value="shih_tzu">Shih Tzu</option>
+                            <option value="caniche">Caniche</option>
+                            <option value="samoyedo">Samoyedo</option>
+                            <option value="beagle">Beagle</option>
+                            <option value="border_collie">Border Collie</option>
+                            <option value="san_bernardo">San Bernardo</option>
+                            <option value="mastin_napolitano">Mastín Napolitano</option>
+                            <option value="mastin_napolitano">Criollo</option>
+                            <option value="NiIdea">Desconocida</option>
+                        </select>
+                    </div>
+
+                    <!--En caso de Gatos-->
+
+                    <div class="raza hidden" id="raza-gato">
+                        <select id="select-gato" name="raza">
+                            <option value="Abyssinian">Abyssinian</option>
+                            <option value="Aegean">Aegean</option>
+                            <option value="American_Bobtail">American Bobtail</option>
+                            <option value="American_Curl">American Curl</option>
+                            <option value="American_Shorthair">American Shorthair</option>
+                            <option value="American_Wirehair">American Wirehair</option>
+                            <option value="Asian">Asian</option>
+                            <option value="Australian_Mist">Australian Mist</option>
+                            <option value="Balinese">Balinese</option>
+                            <option value="Bengal">Bengal</option>
+                            <option value="Birman">Birman</option>
+                            <option value="Bombay">Bombay</option>
+                            <option value="Brazilian_Shorthair">Brazilian Shorthair</option>
+                            <option value="British_Shorthair">British Shorthair</option>
+                            <option value="British_Longhair">British Longhair</option>
+                            <option value="Burmese">Burmese</option>
+                            <option value="Burmilla">Burmilla</option>
+                            <option value="Chartreux">Chartreux</option>
+                            <option value="Chausie">Chausie</option>
+                            <option value="Colorpoint_Shorthair">Colorpoint Shorthair</option>
+                            <option value="Cornish_Rex">Cornish Rex</option>
+                            <option value="Cymric">Cymric</option>
+                            <option value="Devon_Rex">Devon Rex</option>
+                            <option value="Donskoy">Donskoy</option>
+                            <option value="Dragon_Li">Dragon Li</option>
+                            <option value="Egyptian_Mau">Egyptian Mau</option>
+                            <option value="Exotic_Shorthair">Exotic Shorthair</option>
+                            <option value="Havana_Brown">Havana Brown</option>
+                            <option value="Himalayan">Himalayan</option>
+                            <option value="Japanese_Bobtail">Japanese Bobtail</option>
+                            <option value="Javanese">Javanese</option>
+                            <option value="Khao_Manee">Khao Manee</option>
+                            <option value="Kinkalow">Kinkalow</option>
+                            <option value="Korat">Korat</option>
+                            <option value="LaPerm">LaPerm</option>
+                            <option value="Lykoi">Lykoi</option>
+                            <option value="Maine_Coon">Maine Coon</option>
+                            <option value="Manx">Manx</option>
+                            <option value="Munchkin">Munchkin</option>
+                            <option value="Nebelung">Nebelung</option>
+                            <option value="Norwegian_Forest_Cat">Norwegian Forest Cat</option>
+                            <option value="Ocicat">Ocicat</option>
+                            <option value="Oriental_Shorthair">Oriental Shorthair</option>
+                            <option value="Oriental_Longhair">Oriental Longhair</option>
+                            <option value="Oriental_Bicolor">Oriental Bicolor</option>
+                            <option value="Persian">Persian</option>
+                            <option value="Peterbald">Peterbald</option>
+                            <option value="Pixiebob">Pixiebob</option>
+                            <option value="Ragdoll">Ragdoll</option>
+                            <option value="Russian_Blue">Russian Blue</option>
+                            <option value="Savannah">Savannah</option>
+                            <option value="Scottish_Fold">Scottish Fold</option>
+                            <option value="Selkirk_Rex">Selkirk Rex</option>
+                            <option value="Siamese">Siamese</option>
+                            <option value="Siberian">Siberian</option>
+                            <option value="Singapura">Singapura</option>
+                            <option value="Snowshoe">Snowshoe</option>
+                            <option value="Sokoke">Sokoke</option>
+                            <option value="Somali">Somali</option>
+                            <option value="Sphynx">Sphynx</option>
+                            <option value="Tonkinese">Tonkinese</option>
+                            <option value="Toyger">Toyger</option>
+                            <option value="Turkish_Angora">Turkish Angora</option>
+                            <option value="Turkish_Van">Turkish Van</option>
+                            <option value="Criollo">Criollo</option>
+                            <option value="NiIdea">Desconocida</option>
+                        </select>
+                    </div>
+
+                    <!--en caso de reptiles-->
+                    <div class="raza hidden" id="raza-reptil">
+                        <select id="select-reptil" name="raza">
+                            <option value="Dragon_Bearded">Dragón Barbudo</option>
+                            <option value="Python_Bola">Pitón Bola</option>
+                            <option value="Gecko_Leopardo">Gecko Leopardo</option>
+                            <option value="Serpiente_de_Maiz">Serpiente del Maíz</option>
+                            <option value="Escinco_Lengua_Azul">Escinco de Lengua Azul</option>
+                            <option value="Tortuga_de_Orejas_Rojas">Tortuga de Orejas Rojas</option>
+                            <option value="Tortuga_Rusa">Tortuga Rusa</option>
+                            <option value="Tortuga_Sulcata">Tortuga Espolón Africana (Sulcata)</option>
+                            <option value="Anolis_Verde">Anolis Verde</option>
+                            <option value="Gecko_Crestado">Gecko Crestado</option>
+                            <option value="Boa_Constricctor">Boa Constrictora</option>
+                            <option value="Iguana_Verde">Iguana Verde</option>
+                            <option value="Serpiente_Cascabel">Serpiente de Cascabel</option>
+                            <option value="Varano_Acuatico">Varano Acuático</option>
+                            <option value="Tortuga_del_Desierto">Tortuga del Desierto</option>
+                            <option value="NiIdea">Desconocida</option>
+                        </select>
+                    </div>
+
+                    <!--en caso de aves-->
+                    <div class="raza hidden" id="raza-ave">
+                        <select id="select-ave" name="raza" required>
+                            <option value="Periquito_Australiano">Periquito Australiano</option>
+                            <option value="Canario">Canario</option>
+                            <option value="Diamante_Mandarín">Diamante Mandarín</option>
+                            <option value="Agapornis">Agapornis (Inseparables)</option>
+                            <option value="Cacatúa">Cacatúa</option>
+                            <option value="Guacamayo">Guacamayo</option>
+                            <option value="Loro_Amazonico">Loro amazónico</option>
+                            <option value="Ninfa_Carolina">Ninfa (Carolina o Cockatiel)</option>
+                            <option value="Periquito_Monk">Cotorra Monje (Quaker Parrot)</option>
+                            <option value="Tucán">Tucán</option>
+                            <option value="Pinzón_Cebra">Pinzón Cebra</option>
+                            <option value="Loro_Gris_Africano">Loro Gris Africano</option>
+                            <option value="Gallina_Sedas">Gallina Sedosa (Silkie)</option>
+                            <option value="Gallina_Plymouth">Gallina Plymouth Rock</option>
+                            <option value="Gallina_Leghorn">Gallina Leghorn</option>
+                            <option value="Pato_Pekin">Pato Pekín</option>
+                            <option value="Pato_Mudo">Pato Mudo (Muscovy)</option>
+                            <option value="Pavo_Real">Pavo Real</option>
+                            <option value="Pavo_Domestico">Pavo Doméstico</option>
+                            <option value="Ganso_Emden">Ganso Emden</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div>
+                    <label class="label2">Sexo</label>
+                    <label>
+                        <input type="radio" name="sexo" value="M" checked> M
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="F"> F
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label2" for="fechaNac">Fecha de nacimiento</label>
+                    <input class="input2" id="fechaNac" name="fechaNac" type="date" required />
+                </div>
+
+                <div>
+                    <label class="label2" for="fechaDes">Fecha de última desparacitación</label>
+                    <input class="input2" id="fechaDes" name="fechaDes" type="date" required />
+                </div>
+
+                <div>
+                    <label class="label2" for="RUAC">Registro Único de Animales de Compañía (RUAC)</label>
+                    <input class="input" id="RUAC" name="RUAC" type="text" placeholder="PHCXA020304" required />
+                </div>
+
+                <div>
+                    <label class="label2">¿Tu mascota está esterilizada?</label>
+                    <label>
+                        <input type="radio" name="esterilizado" value="si" checked> Sí
+                    </label>
+                    <label>
+                        <input type="radio" name="esterilizado" value="no"> No
+                    </label>
+                    <label>
+                        <input type="radio" name="esterilizado" value="no"> No sé
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label2" for="largo">Largura</label>
+                    <input class="input2" id="largo" name="largo" type="number" min="0" placeholder="80" required />
+                    <span>cm</span>
+                </div>
+
+                <div>
+                    <label class="label2" for="Altura">Altura</label>
+                    <input class="input2" id="Altura" name="Altura" type="number" min="0" placeholder="78" required />
+                    <span>cm</span>
+                </div>
+
+                <div>
+                    <label class="label2" for="peso">Peso</label>
+                    <input class="input2" id="peso" name="peso" type="number" min="0" placeholder="65" required />
+                    <span>kg</span>
+                </div>
+
+                <!--En caso de Perros (Es lo que se ve inicialmente)-->
+
+                <div>
+                    <label class="label2" for="color">Color</label>
+                    <select id="color" name="color" required>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Gris">Gris</option>
+                        <option value="Marron">Marrón</option>
+                        <option value="Crema_Beige">Crema / Beige</option>
+                        <option value="Amarillo">Amarillo</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Violeta">Violeta</option>
+                        <option value="Dorado">Dorado</option>
+                        <option value="Plateado">Plateado</option>
+                        <option value="Marron_Chocolate">Marrón</option>
+                        <option value="Marron_Chocolate">Chocolate</option>
+                        <option value="Rosa">Rosa</option>
+                    </select>
+                </div>
+
+
+                <!--En caso de Perros (Es lo que se ve inicialmente)-->
+
+                <div>
+                    <label class="label2" for="colorS">Color Secundario</label>
+                    <select id="colorS" name="colorS" required>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Gris">Gris</option>
+                        <option value="Marron">Marrón</option>
+                        <option value="Crema_Beige">Crema / Beige</option>
+                        <option value="Amarillo">Amarillo</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Violeta">Violeta</option>
+                        <option value="Dorado">Dorado</option>
+                        <option value="Plateado">Plateado</option>
+                        <option value="Marron_Chocolate">Marrón</option>
+                        <option value="Marron_Chocolate">Chocolate</option>
+                        <option value="Rosa">Rosa</option>
+                    </select>
+                </div>
+
+                <!--En caso de Perros (Es lo que se ve inicialmente)-->
+                <label class="label2">Patrón de color</label>
+                <div id="contenedor-patron">
+                    <div class="patron" id="patron-perro">
+                        <select id="select-perros" name="patron">
+                            <option value="atigrado">Atigrado (rayas o bandas de color)</option>
+                            <option value="merle">Merle (manchas irregulares sobre fondo oscuro)</option>
+                            <option value="arlequin">Arlequín (manchas negras sobre fondo blanco)</option>
+                            <option value="Particolor">Particolor (Manchas de dos o más colores)</option>
+                            <option value="Piebald">Piebald (Un color con manchas de otro color sobre el cuerpo)
+                            </option>
+                            <option value="Bicolor">Bicolor (Mitad y mitad)</option>
+                            <option value="Multicolor">Multicolor</option>
+                            <option value="Manchas">Manchas</option>
+                            <option value="Sólido">Sólido</option>
+                        </select>
+                    </div>
+
+                    <!-- En caso de gatos -->
+                    <div class="patron hidden" id="patron-gato">
+                        <select id="select-gato" name="patron">
+                            <option value="Bicolor">Bicolor</option>
+                            <option value="Tricolor_Calico">Tricolor (Calicó)</option>
+                            <option value="Carey_Tortie">Carey (Tortie)</option>
+                            <option value="Atigrado_Tabby">Atigrado (Tabby)</option>
+                            <option value="Tabby_Clasico">Atigrado Clásico (Classic Tabby)</option>
+                            <option value="Tabby_Mackerel">Atigrado Rayado / Mackerel Tabby</option>
+                            <option value="Tabby_Moteado">Atigrado Moteado (Spotted Tabby)</option>
+                            <option value="Tabby_Ticked">Atigrado en Espiga / Ticked Tabby</option>
+                            <option value="Multicolor">Multicolor</option>
+                            <option value="Manchas">Manchas</option>
+                            <option value="Sólido">Sólido</option>
+                        </select>
+                    </div>
+
+                    <!--En caso de Reptiles-->
+
+                    <div class="patron hidden" id="patron-reptile">
+                        <select id="select-reptile" name="patron">
+                            <option value="Albino">Albino</option>
+                            <option value="Leucistico">Leucístico</option>
+                            <option value="Hipomelanistico">Hipomelanístico</option>
+                            <option value="Anerytristico">Anerytrístico (sin rojo)</option>
+                            <option value="Melanistico">Melanístico (exceso de negro)</option>
+                            <option value="Moteado">Moteado / Spotted</option>
+                            <option value="Rayado">Rayado / Striped</option>
+                            <option value="Bicolor">Bicolor</option>
+                            <option value="Tricolor">Tricolor</option>
+                            <option value="Caramel">Caramel</option>
+                            <option value="Pastel">Pastel</option>
+                            <option value="Piebald">Piebald (manchas blancas irregulares)</option>
+                            <option value="Patternless">Patternless (sin patrón)</option>
+                            <option value="Motley">Motley (líneas dorsales unidas)</option>
+                            <option value="Jungle">Jungle (diseños irregulares)</option>
+                            <option value="Multicolor">Multicolor</option>
+                            <option value="Manchas">Manchas</option>
+                            <option value="Sólido">Sólido</option>
+                        </select>
+                    </div>
+
+                    <!--En caso de Aves-->
+
+                    <div class="patron hidden" id="patron-ave">
+                        <select id="select-ave" name="patron">
+                            <option value="Solido">Sólido (uniforme)</option>
+                            <option value="Bicolor">Bicolor</option>
+                            <option value="Tricolor">Tricolor</option>
+                            <option value="Barrado">Barrado (Barras de colores con blancas)</option>
+                            <option value="Listado">Rayado</option>
+                            <option value="Moteado">Moteado</option>
+                            <option value="Salpicado">Salpicado (Como una gota de un color esparcida en otro)</option>
+                            <option value="Escamado">Escamado </option>
+                            <option value="Perdiz">Perdiz (Partridge)</option>
+                            <option value="Trigo">Trigo (Wheaten)</option>
+                            <option value="Millefleur">Millefleur(Pequeñas manchas de colores en cada pluma)</option>
+                            <option value="Pio">Pío (Manchas de forma irregular)</option>
+                            <option value="Armiñado">Armiñado (Un color de fondo con blanco)</option>
+                            <option value="Splash">Splash(Manchas blancas grandes e irregulares)</option>
+                            <option value="Multicolor">Multicolor</option>
+                            <option value="Manchas">Manchas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="label2" for="Long">Largura del pelaje</label>
+                    <select id="Long" name="Long" required>
+                        <option value="Corto">Corto</option>
+                        <option value="Mediano">Medio</option>
+                        <option value="Largo">Largo</option>
+                        <option value="Plumas">Plumas</option>
+                        <option value="Escamas">Escamas</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="label2" for="Tip">Tipo de pelo</label>
+                    <select id="Tip" name="Tip" required>
+                        <option value="Liso">Liso</option>
+                        <option value="Rizado">Rizado</option>
+                        <option value="Duro">Duro</option>
+                        <option value="Plumas">Plumas</option>
+                        <option value="Escamas">Escamas</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="label2" for="Cues">Cuidados especiales </label>
+                    <input class="input2" id="Cues" name="Cues" type="text" placeholder="Por ejemplo: Higiene constante"
+                        required />
+                </div>
+
+                <div>
+                    <label class="label2" for="Señas">Señas particulares </label>
+                    <input class="input2" id="Señas" name="Señas" type="text"
+                        placeholder="Por ejemplo: Esconde la cola por miedo" required />
+                </div>
+
+                <!-- Cambia el botón por un botón normal -->
+                <td colspan="2"><a class="btn" href="../auth/pet-recepcionista2.html">Siguiente</a></td>
+
+                <div class="divider"></div>
+            </form>
+        </section>
+    </main>
+    <!-- register-pet.html, antes de </body> -->
+    <script src="../../assets/css/pet1.js"></script>
+</body>
+
+</html>
