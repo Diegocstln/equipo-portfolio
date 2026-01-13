@@ -1,0 +1,34 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS raza (
+  id_raza SERIAL PRIMARY KEY,
+  nom_raza VARCHAR(80) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS temperamento (
+  id_temp SERIAL PRIMARY KEY,
+  nom_temp VARCHAR(80) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS tipo_enf (
+  id_tipo_enf SERIAL PRIMARY KEY,
+  nom_tipo_enf VARCHAR(80) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS enfermedad (
+  id_enf SERIAL PRIMARY KEY,
+  nom_enf VARCHAR(120) NOT NULL,
+  id_tipo_enf INT
+);
+
+CREATE TABLE IF NOT EXISTS vacuna (
+  id_vacuna SERIAL PRIMARY KEY,
+  nom_vacuna VARCHAR(120) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS unidad_compuesto (
+  id_uc SERIAL PRIMARY KEY,
+  nom_uc VARCHAR(50) NOT NULL
+);
+
+COMMIT;

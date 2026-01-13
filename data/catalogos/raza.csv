@@ -1,0 +1,576 @@
+﻿id_raza,nom_raza,id_especie
+1,Bichon Bolones,1
+2,Bichon Maltes,1
+3,Chihuahua Pelo Corto,1
+4,Chihuahua Pelo Largo,1
+5,Crestado Chino,1
+6,Pequeno Ruso,1
+7,Petit Brabancon,1
+8,Pomerania,1
+9,Silky Terrier Australiano,1
+10,Spaniel continental enano,1
+11,Spaniel Japones,1
+12,Terrier ingles miniatura,1
+13,Yorkshire Terrier,1
+14,Affenpinscher,1
+15,Basset leonado de Bretana,1
+16,Bedlington terrier,1
+17,Bichon Frise,1
+18,Bichon habanero,1
+19,Border terrier,1
+20,Boston Terrier,1
+21,Braco de Auvernia,1
+22,Bull terrier,1
+23,Cairn Terrier,1
+24,Carlino,1
+25,Cavalier King Charles,1
+26,Coton de Tulear,1
+27,Dandie Dinmont Terrier,1
+28,Fox terrier de pelo duro,1
+29,Fox Terrier de Pelo Liso,1
+30,Grifon Belga,1
+31,Grifon de Bruselas,1
+32,Italian Greyhound,1
+33,Jack Russell Terrier,1
+34,Jagd Terrier,1
+35,Japanese Spitz,1
+36,King Charles spaniel,1
+37,Lakeland Terrier,1
+38,Lhasa Apso,1
+39,Lundehund noruego,1
+40,Miniature Pinscher,1
+41,Mudi,1
+42,Parson Russell Terrier,1
+43,Pastor de los Pirineos,1
+44,Pastor de los Pirineos de Cara Rasa,1
+45,Pastor de Shetland,1
+46,Pekines,1
+47,Pequeno perro leon,1
+48,Perro de Granja Danes y Sueco,1
+49,Podenco portugues,1
+50,Pumi,1
+51,Ratonero Holandes,1
+52,Schipperke,1
+53,Schnauzer Miniatura,1
+54,Shiba Inu,1
+55,Shih tzu,1
+56,Skye terrier,1
+57,Spaniel tibetano,1
+58,Teckel,1
+59,Terrier Australiano,1
+60,Terrier Brasileno,1
+61,Terrier checo,1
+62,Terrier de Manchester,1
+63,Terrier de Norfolk,1
+64,Terrier de Norwich,1
+65,Terrier de Sealyham,1
+66,Terrier Escocés (Scottish Terrier),1
+67,Terrier Japonés (Nihon Teria),1
+68,Vallhund Sueco,1
+69,Volpino Italiano,1
+70,Welsh Terrier,1
+71,West Highland White Terrier (Westie),1
+72,Whippet,1
+73,Shar Pei,1
+74,Airedale Terrier,1
+75,Alaskan Malamute,1
+76,American Cocker Spaniel,1
+77,American Staffordshire Terrier,1
+78,Ariegeois,1
+79,Australian Stumpy Tail Cattle Dog,1
+80,Barbet,1
+81,Basenji,1
+82,Basset Artesiano de Normandía,1
+83,Basset Azul de Gascuña,1
+84,Beagle,1
+85,Beagle-Harrier,1
+86,Bearded Collie,1
+87,"Belgian Shepherd Dog (Pastor Belga, todas variedades)",1
+88,Boyero de Appenzell,1
+89,Boyero de Entlebuch,1
+90,Boyero de las Ardenas,1
+91,Braco de Ariège,1
+92,Braco de Saint Germain,1
+93,Braco del Borbonesado,1
+94,Braco Francés Tipo Pirineos,1
+95,Braco Húngaro de Pelo Corto (Vizsla),1
+96,Briquet Griffon Vendeano,1
+97,Buhund Noruego,1
+98,Bulldog Francés,1
+99,Bulldog Inglés,1
+100,Caniche (Poodle),1
+101,Cazador de Alces Noruego (Elkhound Noruego),1
+102,Chow Chow,1
+103,Cirneco del Etna,1
+104,Cocker ingles,1
+105,Collie de Pelo Corto,1
+106,Collie de pelo largo,1
+107,Dachsbracke de los Alpes,1
+108,Drever,1
+109,Doberman,1
+110,Eurasier,1
+111,Field spaniel,1
+112,Foxhound Americano,1
+113,Gascon Saintongeois,1
+114,Gran Basset Grifon Vendeano,1
+115,Grifon azul de Gascuna,1
+116,Grifon de muestra de pelo duro,1
+117,Grifon de muestra eslovaco de pelo duro,1
+118,Grifon leonado de Bretana,1
+119,Grifon nivernais,1
+120,Harrier,1
+121,Hokkaido,1
+122,Jindo Coreano,1
+123,Kai,1
+124,Kelpie Australiano,1
+125,Kerry Blue Terrier,1
+126,Kishu,1
+127,Kooikerhondje,1
+128,Kromfohrlander,1
+129,Lagotto romagnolo,1
+130,Laika del este siberiano,1
+131,Laika del Oeste Siberiano,1
+132,Laika ruso-europeo,1
+133,Nova Scotia Duck Tolling Retriever,1
+134,Pastor australiano,1
+135,Pastor Bergamasco,1
+136,Pastor catalan,1
+137,Pastor Croata,1
+138,Pastor de Karst,1
+139,Pastor de Picardia,1
+140,Pastor Islandes,1
+141,Pastor Lapon,1
+142,Pastor polaco de las llanuras,1
+143,Pastor Portugues,1
+144,Pequeno Basset Grifon Vendeano,1
+145,Pequeno munsterlander,1
+146,Pequeno Sabueso Azul de Gascuna,1
+147,Pequeno Sabueso Suizo,1
+148,Perdiguero aleman,1
+149,Perdiguero frison,1
+150,Perdiguero portugues,1
+151,Perro de agua americano,1
+152,Perro de agua espanol,1
+153,Perro de agua irlandes,1
+154,Perro de Agua Portugues,1
+155,Perro de Canaan,1
+156,Perro de Caza Polaco,1
+157,Perro de Osos de Carelia,1
+158,Perro de Taiwan,1
+159,Perro Finlandes de Laponia,1
+160,Perro sin Pelo Mexicano (Xoloitzcuintle),1
+161,Perro Sueco de Laponia (Swedish Lapphund),1
+162,Perro Tailandés con Cresta (Thai Ridgeback),1
+163,Pinscher Alemán (Deutscher Pinscher),1
+164,Pinscher Austriaco (Austrian Pinscher),1
+165,Podenco Ibicenco (Ibizan Hound),1
+166,Porcelaine,1
+167,Puli,1
+168,Sabueso Austriaco Negro y Fuego (Brandlbracke),1
+169,Sabueso Bosnio de Pelo Duro (Barak),1
+170,Sabueso de Halden (Haldenstøver),1
+171,Sabueso de Hannover (Hannoverscher Schweisshund),1
+172,Sabueso de Hygen (Hygenhund),1
+173,Sabueso de Istria de Pelo Corto,1
+174,Sabueso de Istria de Pelo Duro,1
+175,Sabueso de Montaña de Montenegro (Crnogorski Planinski Goni?),1
+176,Sabueso de Posavatz (Posavac Hound),1
+177,Sabueso de Sangre de Baviera (Bayerischer Gebirgsschweißhund),1
+178,Sabueso de Schiller (Schillerstövare),1
+179,Sabueso de Småland (Smålandsstövare),1
+180,Sabueso de Westfalia (Westfälische Dachsbracke),1
+181,Sabueso del Tirol (Tiroler Bracke),1
+182,Sabueso Eslovaco (Slovenský Kopov),1
+183,Sabueso Español (Sabueso Español),1
+184,Sabueso Estirio de Pelo Duro (Steirische Rauhhaarbracke),1
+185,Sabueso Finlandés (Suomenajokoira),1
+186,Sabueso Griego (Hellinikós Ichnilátis),1
+187,Sabueso Italiano de Pelo Corto (Segugio Italiano a Pelo Raso),1
+188,Sabueso Italiano de Pelo Duro (Segugio Italiano a Pelo Forte),1
+189,Sabueso Noruego (Norwegian Hound / Dunker),1
+190,Sabueso Serbio (Srpski Goni?),1
+191,Sabueso Suizo (Schweizer Laufhund),1
+192,Sabueso Tricolor Serbio (Srpski Trobojni Goni?),1
+193,Saluki,1
+194,Samoyedo (Samoyed),1
+195,Schapendoes Neerlandés,1
+196,Schnauzer (mediano),1
+197,Setter Inglés,1
+198,Setter Irlandés,1
+199,Setter Irlandés Rojo y Blanco,1
+200,Shikoku (Shikoku Inu),1
+201,Siberian Husky,1
+202,Sloughi (Lebrel Árabe),1
+203,Spaniel Azul de Picardía,1
+204,Spaniel Bretón (Epagneul Breton),1
+205,Spaniel de Pont-Audemer,1
+206,Spaniel Francés (Epagneul Français),1
+207,Spitz Alemán (Deutscher Spitz),1
+208,Spitz de Norrbotten (Norrbottenspets),1
+209,Spitz Finlandés (Suomenpystykorva),1
+210,Springer Spaniel Galés (Welsh Springer Spaniel),1
+211,Springer Spaniel Inglés (English Springer Spaniel),1
+212,Staffordshire Bull Terrier,1
+213,Sussex Spaniel,1
+214,Terrier Glen de Imaal Irlandés,1
+215,Terrier Irlandés (Irish Terrier),1
+216,Terrier Irlandés de Pelo Suave (Soft Coated Wheaten Terrier),1
+217,Terrier Tibetano,1
+218,Viringo Peruano (Perro sin Pelo del Perú),1
+219,Welsh Corgi Cardigan,1
+220,Welsh Corgi Pembroke,1
+221,Akita (Akita Inu japonés),1
+222,Akita Americano,1
+223,Antiguo Perro de Muestra Danés (Old Danish Pointer),1
+224,Antiguo Perro de Pastor Inglés (Old English Sheepdog),1
+225,Aidi (Perro del Atlas),1
+226,Basset Hound,1
+227,Billy,1
+228,Borzoi (Galgo Ruso),1
+229,Boyero de Flandes (Bouvier des Flandres),1
+230,Braco Italiano (Bracco Italiano),1
+231,Braco Alemán de Pelo Corto (Deutsch Kurzhaar / German Shorthaired Pointer),1
+232,Braco de Weimar (Weimaraner),1
+233,Braco Francés (tipo Gascuña),1
+234,Briard,1
+235,Boxer,1
+236,Cane Corso,1
+237,Cazador de Alces Sueco (Jämthund),1
+238,Cesky Fousek (Bohemian Wirehaired Pointing Dog),1
+239,Cimarrón Uruguayo,1
+240,Clumber Spaniel,1
+241,Coonhound Negro y Fuego (Black and Tan Coonhound),1
+242,Cuvac Eslovaco (Slovenský ?uva?),1
+243,Dogo Argentino,1
+244,Dogo de Mallorca (Ca de Bou / Perro de Presa Mallorquín),1
+245,Dálmata,1
+246,Espinone (Spinone Italiano),1
+247,Fila de San Miguel (Cão de Fila de São Miguel),1
+248,Galgo Español (Spanish Greyhound),1
+249,German Wirehaired Pointing Dog (Deutsch Drahthaar),1
+250,Golden Retriever,1
+251,Gran Boyero Suizo (Greater Swiss Mountain Dog),1
+252,Gran Grifón Vendeano (Grand Griffon Vendéen),1
+253,Gran Münsterländer (Large Münsterländer),1
+254,Gran Sabueso Anglo-Francés Blanco y Naranja,1
+255,Gran Sabueso Anglo-Francés Blanco y Negro,1
+256,Gran Sabueso Azul de Gascuña (Grand Bleu de Gascogne),1
+257,Greyhound,1
+258,Grifón de Muestra de Pelo Duro (Wirehaired Pointing Griffon),1
+259,Hovawart,1
+260,Komondor,1
+261,Kuvasz,1
+262,Labrador Retriever,1
+263,Lebrel Afgano (Afghan Hound),1
+264,Lebrel Escocés (Scottish Deerhound),1
+265,Lebrel Húngaro (Magyar Agár),1
+266,Mastín del Alentejo (Rafeiro do Alentejo),1
+267,Otterhound,1
+268,Pastor Alemán (German Shepherd Dog),1
+269,Pastor Blanco Suizo,1
+270,Pastor de Beauce (Beauceron),1
+271,Pastor de la Maremma y de los Abruzos (Maremmano-Abruzzese Sheepdog),1
+272,Pastor Holandés (Dutch Shepherd),1
+273,Pastor Polaco de Podhale (Polski Owczarek Podhala?ski),1
+274,Pastor Rumano de los Cárpatos,1
+275,Pastor Rumano de Mioritza,1
+276,Perdiguero de Burgos,1
+277,Perdiguero de Drente (Drentsche Patrijshond),1
+278,Perro Crestado Rodesiano (Rhodesian Ridgeback),1
+279,Perro de Agua Frisón (Wetterhoun),1
+280,Perro de Castro Laboreiro,1
+281,Perro de Groenlandia (Greenland Dog),1
+282,Perro de Muestra Alemán de Pelo Largo (Deutsch Langhaar),1
+283,Perro de Pastor Mallorquín (Ca de Bestiar),1
+284,Perro de San Huberto (Bloodhound),1
+285,Perro del Faraón (Pharaoh Hound),1
+286,Perro Lobo Checoslovaco (Czechoslovakian Wolfdog),1
+287,Perro Lobo de Saarloos (Saarloos Wolfdog),1
+288,Podenco Canario,1
+289,Pointer Inglés,1
+290,Poitevino (Chien de Poitevin),1
+291,Presa Canario (Dogo Canario),1
+292,Pudelpointer,1
+293,Retriever de la Bahía de Chesapeake (Chesapeake Bay Retriever),1
+294,Retriever de Pelo Liso (Flat-Coated Retriever),1
+295,Retriever de Pelo Rizado (Curly-Coated Retriever),1
+296,Sabueso Anglo-Francés Mediano (Anglo-Français de Petite Vénerie),1
+297,Sabueso Artesiano (Ariegeois),1
+298,Sabueso Bavarés de Montaña (Bavarian Mountain Hound),1
+299,Sabueso de Artois (Chien d’Artois),1
+300,Sabueso Francés Blanco y Negro (Grand Anglo-Français Blanc et Noir),1
+301,Sabueso Francés Tricolor (Grand Anglo-Français Tricolore),1
+302,Sabueso Polaco (Polski Ogar),1
+303,Foxhound Inglés (English Foxhound),1
+304,Schnauzer Gigante (Riesenschnauzer),1
+305,Setter Gordon,1
+306,Spaniel Picardo (Épagneul Picard),1
+307,Terrier Negro de Rusia (Black Russian Terrier),1
+308,Vizsla de Pelo Duro (Wirehaired Vizsla),1
+309,Bernese Mountain Dog (Boyero de Berna),1
+310,Broholmer,1
+311,Bullmastiff,1
+312,Dogo de Burdeos,1
+313,Dogo del Tíbet (Mastín Tibetano),1
+314,Gran Danés (Dogo Alemán),1
+315,Irish Wolfhound,1
+316,Kangal Shepherd Dog,1
+317,Landseer,1
+318,Leonberger,1
+319,Mastiff (Mastín Inglés),1
+320,Mastín del Pirineo,1
+321,Mastín Español,1
+322,Neapolitan Mastiff (Mastín Napolitano),1
+323,Newfoundland (Terranova),1
+324,Perro de la Sierra de la Estrela,1
+325,Perro de Montaña de los Pirineos,1
+326,Rottweiler,1
+327,San Bernardo,1
+328,Afgano (Lebrel Afgano),1
+329,Akita Japonés,1
+330,Basset Azul de Gascuña,1
+331,Basset Grifón Vandeano (Pequeño),1
+332,Beauceron,1
+333,Bedlington Terrier,1
+334,Bergamasco,1
+335,Bichón Frisé,1
+336,Bloodhound (Sabueso de San Huberto),1
+337,Bobtail (Antiguo Perro Pastor Inglés),1
+338,Bodeguero Andaluz,1
+339,Border Collie,1
+340,Bracco Italiano (Braco Italiano),1
+341,Braco Alemán de Pelo Corto,1
+342,Braco Alemán de Pelo Duro,1
+343,Braco de Weimar (Weimaraner),1
+344,Braco Húngaro (Vizsla),1
+345,Braco Húngaro de Pelo Duro (Vizsla de Pelo Duro),1
+346,Bretón (Spaniel Bretón),1
+347,Bull Terrier Miniatura,1
+348,Bulldog (Inglés),1
+349,Caniche Enano (Miniatura),1
+350,Caniche Grande (Estándar),1
+351,Caniche Toy,1
+352,Cavalier King Charles Spaniel,1
+353,Cazador de Alces Noruego (Elkhound Noruego),1
+354,Chihuahua (de pelo largo),1
+355,Chihuahua (de pelo suave/corto),1
+356,Chin Japonés,1
+357,Chow Chow (de pelo suave),1
+358,Clumber Spaniel,1
+359,Cobrador de Nueva Escocia (Nova Scotia Duck Tolling Retriever),1
+360,Cockapoo,1
+361,Cocker Spaniel (Inglés),1
+362,Cocker Spaniel Americano,1
+363,Collie Barbudo (Bearded Collie),1
+364,Collie de Pelo Corto,1
+365,Corgi Galés de Cardigan,1
+366,Corgi Galés de Pembroke,1
+367,Crestado Chino (Chinese Crested Dog),1
+368,Crestado Rodesiano (Rhodesian Ridgeback),1
+369,Field Spaniel,1
+370,Fox Terrier de Pelo Duro,1
+371,Fox Terrier de Pelo Liso,1
+372,Foxhound (Americano o Inglés),1
+373,Galgo (Español),1
+374,Galgo Italiano,1
+375,Golden Retriever,1
+376,Gran Azul de Gascuña,1
+377,Gran Danés (Dogo Alemán),1
+378,Grifón de Bruselas,1
+379,Grifón Vandeano Grande (Grand Basset Griffon Vendéen),1
+380,Habanero (Bichón Habanero),1
+381,Hamilton Stovare,1
+382,Husky Siberiano,1
+383,Keeshond,1
+384,Kerry Blue Terrier,1
+385,King Charles Spaniel,1
+386,Kuvasz Húngaro,1
+387,Labradoodle,1
+388,Labrador Retriever,1
+389,Laekenois (Pastor Belga Laekenois),1
+390,Lancashire Heeler,1
+391,Lebrel Escocés (Deerhound),1
+392,Lobero Irlandés (Irish Wolfhound),1
+393,Lowchen (Pequeño Perro León),1
+394,Malamute de Alaska,1
+395,Maltés,1
+396,Manchester Terrier,1
+397,Mastín Inglés (Mastiff),1
+398,Mastín Napolitano,1
+399,Mastín Tibetano,1
+400,Munsterlander Grande,1
+401,Pachón Navarro,1
+402,Papillon,1
+403,Parson Jack Russell Terrier,1
+404,Pastor Belga Groenendael,1
+405,Pastor Belga Malinois,1
+406,Pastor Belga Tervueren,1
+407,Pastor de Anatolia (Kangal),1
+408,Pastor de Brie (Briard),1
+409,Pastor de los Pirineos,1
+410,Pastor de Maremma (Maremmano-Abruzzese),1
+411,Pastor de Shetland (Shetland Sheepdog),1
+412,Pastor Ganadero Australiano (Australian Cattle Dog),1
+413,Pastor Lapon de Suecia,1
+414,Bull Terrier,1
+415,Cane Corso (Mastín Italiano),1
+416,Perro de Agua Portugués,1
+417,Perro del Faraón (Pharaoh Hound),1
+418,Perro Finlandés de Laponia,1
+419,Mini Pinscher (Pinscher Miniatura),1
+420,Pastor Blanco Suizo,1
+421,Pastor Catalán (Gos d’Atura Català),1
+422,Pastor del Cáucaso,1
+423,Pastor Vasco,1
+424,Pointer Inglés,1
+425,Perro Serra da Estrela (Pastor de la Sierra de Estrela),1
+426,Pinscher Alemán,1
+427,Pitbull Terrier Americano,1
+428,Podenco Canario,1
+429,Podenco Ibicenco (de pelo corto y liso),1
+430,Puli Húngaro,1
+431,Ratonero Valenciano (Gos Rater Valencià),1
+432,Pastor Alemán,1
+433,Chow Chow (de pelo duro),1
+434,Retriever de Chesapeake (Chesapeake Bay Retriever),1
+435,Retriever de Pelo Liso (Flat-Coated Retriever),1
+436,Rough Collie (Pastor Escocés de Pelo Largo),1
+437,Sabueso Bávaro de Montaña,1
+438,Sabueso Italiano (de pelo corto y suave),1
+439,Saluki (Galgo Persa),1
+440,San Bernardo (de pelo medio/largo),1
+441,Schnauzer Estándar,1
+442,Schnauzer Gigante,1
+443,Schnauzer Miniatura,1
+444,Sealyham Terrier,1
+445,Setter Escocés (Gordon Setter),1
+446,Setter Inglés,1
+447,Setter Irlandés,1
+448,Shar Pei,1
+449,Shiba Inu,1
+450,Shih Tzu,1
+451,Skye Terrier,1
+452,Sloughi (Galgo Árabe),1
+453,Soft Coated Wheaten Terrier,1
+454,Spaniel Holandés (Kooikerhondje),1
+455,Spinone Italiano,1
+456,Spitz Alemán Mediano,1
+457,Spitz Alemán Pequeño,1
+458,Spitz Finlandés,1
+459,Spitz Japonés,1
+460,Springer Spaniel Galés,1
+461,Staffordshire Bull Terrier,1
+462,Sussex Spaniel,1
+463,Teckel (pelo largo),1
+464,Teckel (pelo duro),1
+465,Teckel (pelo liso),1
+466,Teckel miniatura (pelo duro),1
+467,Teckel miniatura (pelo largo),1
+468,Teckel miniatura (pelo liso),1
+469,Terranova (Newfoundland),1
+470,Terrier Australiano,1
+471,Terrier Checo,1
+472,Terrier de Airedale (Airedale Terrier),1
+473,Terrier de Norfolk,1
+474,Terrier de Norwich,1
+475,Terrier Escocés (Scottish Terrier),1
+476,Terrier Galés (Welsh Terrier),1
+477,Terrier Tibetano,1
+478,"Toy Terrier Inglés (English Toy Terrier, Black & Tan)",1
+479,Xoloitzcuintle Mediano,1
+1,Abyssinian,2
+2,Aegean,2
+3,American Bobtail,2
+4,American Curl,2
+5,American Shorthair,2
+6,American Wirehair,2
+7,Aphrodite Giant,2
+8,Arabian Mau,2
+9,Asian,2
+10,Asian Semi-longhair,2
+11,Australian Mist,2
+12,Balinese,2
+13,Bambino,2
+14,Bengal,2
+15,Birman,2
+16,Bombay,2
+17,Brazilian Shorthair,2
+18,British Longhair,2
+19,British Shorthair,2
+20,Burmese,2
+21,Burmilla,2
+22,California Spangled,2
+23,Chantilly-Tiffany,2
+24,Chartreux,2
+25,Chausie,2
+26,Cornish Rex,2
+27,Cymric,2
+28,Devon Rex,2
+29,Donskoy,2
+30,Egyptian Mau,2
+31,Exotic Shorthair,2
+32,Havana,2
+33,Highlander,2
+34,Himalayan,2
+35,Japanese Bobtail,2
+36,Khaomanee,2
+37,Korat,2
+38,Kurilian Bobtail,2
+39,LaPerm,2
+40,Maine Coon,2
+41,Manx,2
+42,Minskin,2
+43,Minuet,2
+44,Munchkin,2
+45,Nebelung,2
+46,Norwegian Forest,2
+47,Ocicat,2
+48,Oriental Longhair,2
+49,Oriental Shorthair,2
+50,Persian,2
+51,Peterbald,2
+52,Pixiebob,2
+53,Pixiebob Longhair,2
+54,Ragdoll,2
+55,Russian Blue,2
+56,Savannah,2
+57,Scottish Fold,2
+58,Scottish Fold Longhair,2
+59,Scottish Straight,2
+60,Scottish Straight Longhair,2
+61,Selkirk Rex,2
+62,Selkirk Rex Longhair,2
+63,Serengeti,2
+64,Siamese,2
+65,Siberian,2
+66,Singapura,2
+67,Snowshoe,2
+68,Somali,2
+69,Sphynx,2
+70,Tennessee Rex,2
+71,Tennessee Rex Shorthair,2
+72,Thai,2
+73,Tonkinese,2
+74,Toybob,2
+75,Toyger,2
+76,Turkish Angora,2
+77,Turkish Van,2
+1,Periquitos,3
+2,Canarios,3
+3,Diamantes,3
+4,Agapornis,3
+5,Ninfas,3
+6,Cotorras,3
+7,Loro gris africano,3
+8,Cacatúas,3
+9,Guacamayo,3
+10,Ecletus,3
+11,Petirrojo,3
+12,Ruiseñor,3
+1,Iguana,4
+2,Gecko,4
+3,Camaleón,4
+4,Tortuga de agua,4
+5,Serpiente del maíz,4
+6,Pogonas (Dragón barbudo),4
+7,Serpiente jarretera,4

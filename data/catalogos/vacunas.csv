@@ -1,0 +1,57 @@
+﻿id_vacunas,id_especie,nombre_vacunas,Previene
+1,1,Bordetella (Bronchiseptica),Tos de las Perreras
+2,1,Leptospira,Leptospirosis (infecci¢n bacteriana)
+3,1,Borrelia Burgdorferi,Enfermedad de Lyme
+4,1,Influenza Canina (H3N8 y H3N2),Gripe Canina
+5,1,Toxoide de Crotalus Atrox,Veneno de la Serpiente de Cascabel
+6,1,Moquillo Canino,Moquillo
+7,1,Adenovirus (Hepatitis Infecciosa),Tipo 1 (Hepatitis)
+8,1,Adenovirus (Hepatitis Infecciosa),Tipo 2 (Respiratorio)
+9,1,Parvovirus,Parvovirus Canino
+10,1,Rabia,Rabia
+11,1,Combinadas,Parainfluenza Canina
+12,2,FELINE 1 HCP+FeLV,Panleucopenia felina
+13,2,FELINE 2-FeLV,Leucemia felina
+14,2,RABIA,Rabia
+15,2,TRICAT TRIO,Rinotraqueitis viral felina
+16,2,DEFENSOR 1,Rabia
+17,2,FELOCELL 3,Calicivirosis felina
+18,2,FELIGREN CRP/R,Panleucopenia felina
+19,2,FELIGREN CRP,Calicivirosis felina
+20,2,LEUCOGEN,Leucemia felina
+21,3,Gallimune 302 ENC+BI+EDS,Newcastle +  Bronquitis infecciosa y el síndrome de baja postura
+22,3,Volvac AE+FP MLV,Encefalomielitis Aviar + Viruela Aviar
+23,3,Volvac Influenza FP Recombinante,Viruela + Influenza Aviar
+24,3,Volvac ND+IB MLV,Newcastle + Bronquitis Infecciosa
+25,3,Minazel plus,micotoxicosis
+26,3,Lapigen 100,E. coli +  E. aerogenes +  Salmonella spp y P. aeruginosa
+27,3,Lapigen 50,E. coli +  E. aerogenes +  Salmonella spp y P. aeruginosa
+28,3,Minoxel,colibacilosis
+29,3,Minoxel 8G,colibacilosis
+30,3,Diramox Soluble,nfecciones secundarias a una enfermedad viral.
+31,3,Espectolin Polvo Soluble,Escherichia coli y Mycoplasma gallisepticum.
+32,3,Ne-O-Tetra,diarreas +  estados de estrés +  baja de postura.
+33,3,Primecin Soluble,Pasteurella +  Mycoplasma +  E. coli +  Salmonella +  Haemophilus +  Staphylococcus +  Streptococcus +  Pseudomonas y Corynebacterium.
+34,3,Sulfatropin Plus,colibacilosis +  ECR +  tifus aviar +  pulorosis +  salmonelosis +  coriza infecciosa +  cólera aviar.
+35,3,Diramox Premix,s infecciones bacterianas susceptibles a la amoxicilina en aves de engorda. Así como coadyuvante en infecciones secundarias a una enfermedad viral.
+36,3,Diramox Premix 50%,enfermedades bacterianas en aves +  causadas por Salmonella spp +  Escherichia coli +  Pasteurella spp +  Haemophilus spp +  Streptococcus spp y Clostridium spp
+37,3,Flortec Premix,Florfenicol +  así como coadyuvante en infecciones bacterianas secundarias a una enfermedad viral.
+38,3,Flortec Premix 8%,Salmonella spp +  Escherichia coli +  Pasteurella haemolytica +  Pasteurella multocida +  Streptococcus spp y Mycoplasma spp.
+39,3,Kitacron Feed 110,Para el tratamiento de enfermedades bacterianas causadas por gérmenes sensibles a la kitasamicina.
+40,3,Lapi-Resp FT,Salmonella spp +  Escherichia coli +  Mannheimia haemolytica +  Pasteurella multocida +  Streptococcus spp y Mycoplasma spp
+41,3,Neumo 200,Para el tratamiento de enfermedades causadas por gérmenes sensibles a la acción de la oxitetraciclina
+42,3,Neumoclor 200,germenes susceptibles a la clortetraciclina +  así como coadyuvante en infecciones secundarias a una enfermedad viral.
+43,3,Primecin Premix,Mycoplasma gallisepticum +  Mycoplasma synoviae +  Haemophilus paragallinarum +  Pasteurella multocida +  enfermedades del tracto digestivo causadas por gérmenes Gram positivos y Gram negativos
+44,3,Sulfatropin Premezcla,Para el tratamiento de las infecciones causadas por las bacterias sensibles a la acción de la fórmula en aves de granja y de combate.
+45,3,Tiaprem,Mycoplasma gallisepticum +  sinovitis infecciosa causada por Mycoplasma synoviae y otras infecciones causadas por microorganismos susceptibles a la fórmula
+46,3,Tiaprem 50%,Mycoplasma gallisepticum +  la sinovitis infecciosa causada por Mycoplasma synoviae.
+47,3,Expectoral,Expectorante coadyuvante en la prevención y tratamiento de las infecciones respiratorias en pollos de engorda +  reproductoras y gallinas de postura.
+48,3,Electrolife,Coadyuvante en el tratamiento de deshidratación +  diarreas +  y convalecencias.
+49,3,Vitamix,Para la prevención y corrección de deficiencias vitamínicas incluidas en la fórmula +  así como estados de estrés o convalecencia de alguna enfermedad en aves.
+50,3,Garra Ban Mo 29,Boophilus spp +  Amblyomma sp +  Dermacentor spp +  Anocentor sp; moscas: Haematobia sp +  Stomoxys sp; piojos: Haematopinus spp +  Lignogatus sp +  Solenopotes sp; Melophagus spp +  Damalinia spp.
+51,3,Larvakill Premix,Regulador sintético del crecimiento de insectos con actividad contra dípteros (moscas +  mosquitos +  moscas de la fruta).
+52,3,Lomo Pon S,Haematobia sp +  Stomoxys sp +  mosca doméstica +  tábanos y mosquitos +  piojos: Haematopinus spp +  Lignogatus sp +  Solenopotes sp +  Melophagus spp; Damalinia spp
+53,3,Ticoff,mosca del establo +  mosca de la paleta +  mosca de la cara +  así como tábanos +  piojos y ácaros.
+54,3,Trak,Boophilus spp +  Amblyomma spp +  Damalinia sp +  Haematopinus spp +  Solenoptes sp +  Linognathus spp +  Trichodectes sp +  Demodex sp +  Otodectes sp +  Dermacentor sp +  Rhipicephalus sp +  Otobius sp +  Sarcoptes spp +  Psoroptes sp y Chorioptes sp.
+55,4,HerpShield,Herpesvirus de las Tortugas
+56,4,SerpoVac,Adenovirus de las Serpientes

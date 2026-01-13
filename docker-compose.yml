@@ -9,24 +9,23 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - vetcare_data:/var/lib/postgresql/data
       - ./sql:/docker-entrypoint-initdb.d
-      - ./data:/data
+      - ./data/catalogos:/data/catalogos
+      - pgdata:/var/lib/postgresql/data
 
   api:
     build: ./api
     container_name: vetcare_api
-    depends_on:
-      - db
     environment:
-      PORT: 3000
       PGHOST: db
       PGPORT: 5432
-      PGDATABASE: vetcare
       PGUSER: vetcare_user
       PGPASSWORD: vetcare_pass
+      PGDATABASE: vetcare
     ports:
       - "3000:3000"
+    depends_on:
+      - db
 
 volumes:
-  vetcare_data:
+  pgdata:
