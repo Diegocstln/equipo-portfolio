@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hospital Veterinario — Inicio</title>
+  <meta name="description" content="Landing pública para hospital veterinario con navbar, secciones y botón de usuario con panel para iniciar sesión. 100% HTML+CSS, sin JS." />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container nav">
+      <!-- Logo a la izquierda -->
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span aria-hidden="true" class="logo"></span>
+        <span class="name"><b>PawHospital</b></span>
+      </a>
+
+      <!-- Menú principal (centro) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="#especialidad">Especialidad</a>
+        <a href="#doctores">Doctores</a>
+        <a href="#sobre">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="user">
+        <button class="trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
+          <span class="avatar" aria-hidden="true"></span>
+          <span>Recepción</span>
+          <span class="chev" aria-hidden="true">▾</span>
+        </button>
+
+        <div class="panel" role="dialog" aria-label="Opciones de cuenta">
+          <table class="mini-table">
+            <thead><tr><th colspan="2">Cuenta</th></tr></thead>
+            <tbody>
+              <tr><td>Rol</td><td><span class="muted">Recepcionista</span></td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">
+                  <a class="btn" href="../pages/auth/login-choice.html">Cerrar sesión</a>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main class="container">
+    <section class="dashboard">
+      <h1 style="margin:0 0 6px">📋 Panel del Recepcionista</h1>
+      <p class="muted" style="margin:0 0 18px">Gestiona dueños, pacientes y citas desde aquí.</p>
+
+      <div class="cards" style="margin-top:12px">
+        <article class="card stack">
+          <b style="font-size:1.05rem">Registrar dueño</b>
+          <span class="muted">Da de alta un nuevo dueño para poder registrar sus mascotas y agendar citas.</span>
+
+          <div class="cluster" style="margin-top:10px">
+            <!-- ✅ Opción principal -->
+            <a class="btn" href="../dashboard/recepcionista.html">➕ Registrar dueño</a>
+
+            <!-- Opcionales -->
+            <a class="btn" href="../auth/pet-recepcionista.html" style="background:transparent;border:1px solid var(--border);color:var(--text)">
+              🐾 Registrar mascota
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <small>© 2025 PawHospital</small>
+      <small class="muted">Panel interno (Recepción)</small>
+    </div>
+  </footer>
+</body>
+</html>
