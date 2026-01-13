@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registrar mascota - VetCare</title>
+  <link rel="stylesheet" href="../../assets/css/auth.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css"/>
+</head>
+<body>
+
+    <header>
+    <div class="container nav">
+      <!-- Logo a la izquierda -->
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span aria-hidden="true" class="logo"></span>
+        <span class="name"><b>PawHospital</b></span>
+      </a>
+
+      <!-- Menú principal (centro) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="index-user.html#especialidad"></a>
+        <a href="index-user.html#doctores"></a>
+        <a href="index-user.html#sobre"></a>
+        <a href="index-user.html#contacto"></a>
+      </nav>
+   
+      <!-- Botón de usuario con menú/mini tabla (derecha) -->
+      <div class="user">
+        <!-- El botón es un <button> dentro de un <form> con tabindex para permitir :focus-within sin JS -->
+        <button class="trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
+          <span class="avatar" aria-hidden="true"></span>
+          <span>Cuenta</span>
+          <span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <!-- Panel sin JS: aparece al enfocar el contenedor .user -->
+        <div class="panel" role="dialog" aria-label="Opciones de cuenta">
+            <table class="mini-table">
+                <thead><tr><th colspan="2">Cuenta (Recepcionista)</th></tr></thead>
+                <tfoot><tr><td colspan="2"><a class="btn" href="login.html">Cerrar sesión</a></td></tr></tfoot>
+            </table>
+            </div>
+      </div>
+    </div>
+  </header>
+    <main class="auth-shell">
+    <section class="card" role="region" aria-labelledby="reg-title">
+      <div class="brand">
+        <i class="brand__logo" aria-hidden="true"></i>
+        <span class="brand__name">PawHospital</span>
+        <span class="badge2" style="margin-left:auto">Registro</span>
+      </div>
+      <!-- <div class="alert alert--error" role="alert">El correo ya está registrado.</div> -->
+      <!-- <div class="alert alert--success" role="alert">¡Revisa tu correo para verificar la cuenta!</div> -->
+
+      <h1 class="h" id="reg-title">Vacunas con las que cuenta la mascota </h1>
+
+      <form class="form" method="post" action="/auth/register">
+        <div class="contenedor-vacunas">
+        <div id="vacunas-perro" class="vacunas">  
+        <div>
+                  <span>Vacunas Obligatorias</span>
+          <label class="label2">Moquillo canino (Distemper)</label>
+          <label>
+            <input type="radio" name="Moquillo" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Moquillo" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Moquillo" value="no"> No sé
+          </label>
+        </div>
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Parvovirus canino</label>
+          <label>
+            <input type="radio" name="Parvovirus" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Parvovirus" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Parvovirus" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Hepaptitis Infecciosa canina (Adenovirus)</label>
+          <label>
+            <input type="radio" name="esterilizado" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Leptospirosis</label>
+          <label>
+            <input type="radio" name="Leptospirosis" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Leptospirosis" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Leptospirosis" value="no"> No sé
+          </label>
+        </div>        
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Rabia </label>
+          <label>
+            <input type="radio" name="esterilizado" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <span>Las siguientes suelen ser opcionales que las tengan </span>
+          <label class="label2">Tos de las Perreras (Traqueobronquitis Infecciosa)</label>
+          <label>
+            <input type="radio" name="Tos" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Tos" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Tos" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Leishmaniosis</label>
+          <label>
+            <input type="radio" name="Leishmaniosis" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Leishmaniosis" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Leishmaniosis" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Coronavirus Canino</label>
+          <label>
+            <input type="radio" name="Coronavirus" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Coronavirus" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Coronavirus" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Bordetella</label>
+          <label>
+            <input type="radio" name="Bordetella" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Bordetella" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Bordetella" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Parainfluenza</label>
+          <label>
+            <input type="radio" name="Parainfluenza" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Parainfluenza" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Parainfluenza" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        </div>
+        <!--En caso de gato-->
+
+        <div id="vacunas-gato" class="vacunas hidden">
+        <div >
+                  <span>Vacunas obligatorias </span>
+          <label class="label2">Vacuna Trivalente Felina (FVRCP)</label>
+          <label>
+            <input type="radio" name="FVRCP" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="FVRCP" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="FVRCP" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Vacuna Antirrábica</label>
+          <label>
+            <input type="radio" name="Antirrábica" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Antirrábica" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Antirrábica" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+                  <span>Vacunas segun estilo de vida</span>
+          <label class="label2">Vacuna contra la Leucemia Felina (FeLV)</label>
+          <label>
+            <input type="radio" name="FeLV" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="FeLV" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="FeLV" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+                  <span>otras vacunas no obligatorias </span>
+          <label class="label2">Vacuna contra la Chlamydiosis felina</label>
+          <label>
+            <input type="radio" name="esterilizado" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="esterilizado" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Vacuna contra la Peritonitis Infecciosa Felina (PIF)</label>
+          <label>
+            <input type="radio" name="PIF" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="PIF" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="PIF" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        </div>
+       <!-- En caso de reptiles hay vacunas pero no son obligatorias--> 
+
+        <div id="vacunas-reptil" class="vacunas hidden">
+          <div >
+          <label class="label2">Psitacosis (Chlamyvac)</label>
+          <label>
+            <input type="radio" name="Chlamyvac" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Chlamyvac" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Chlamyvac" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">HerpShield</label>
+          <label>
+            <input type="radio" name="HerpShield" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="HerpShield" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="HerpShield" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">SerpoVac</label>
+          <label>
+            <input type="radio" name="SerpoVac" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="SerpoVac" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="SerpoVac" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">KoiVac</label>
+          <label>
+            <input type="radio" name="KoiVac" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="KoiVac" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="KoiVac" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        </div>
+
+       <!-- En caso de aves--> 
+
+
+        <div id="vacunas-ave" class="vacunas hidden">
+          <div>
+                  <span>Vacunas obligatorias </span>
+          <label class="label2">Marek</label>
+          <label>
+            <input type="radio" name="Marek" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Marek" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Marek" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Newcastle (NDV)</label>
+          <label>
+            <input type="radio" name="NDV" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="NDV" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="NDV" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Bronquitis Infecciosa (IB)</label>
+          <label>
+            <input type="radio" name="IB" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="IB" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="IB" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Viruela Aviar</label>
+          <label>
+            <input type="radio" name="Viruela Aviar" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Viruela Aviar" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Viruela Aviar" value="no"> No sé
+          </label>
+        </div>        
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Gumboro (IBD)</label>
+          <label>
+            <input type="radio" name="IBD" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="IBD" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="IBD" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+                  <span>Vacunas por riesgo o zona</span>
+          <label class="label2">Coriza Aviar</label>
+          <label>
+            <input type="radio" name="Coriza Aviar" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Coriza Aviar" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Coriza Aviar" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Salmonella</label>
+          <label>
+            <input type="radio" name="Salmonella" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Salmonella" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Salmonella" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Cólera Aviar</label>
+          <label>
+            <input type="radio" name="Cólera Aviar" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Cólera Aviar" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Cólera Aviar" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Encefalomielitis Aviar (AE):</label>
+          <label>
+            <input type="radio" name="AE" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="AE" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="AE" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+        <div>
+          <label class="label2">Laringotraqueitis Aviar</label>
+          <label>
+            <input type="radio" name="Laringotraqueitis Aviar" value="si" checked> Sí
+          </label>
+          <label>
+            <input type="radio" name="Laringotraqueitis Aviar" value="no"> No
+          </label>
+          <label>
+            <input type="radio" name="Laringotraqueitis Aviar" value="no"> No sé
+          </label>
+        </div>
+
+        <div>
+        <label class="label2" for="fechaApi">Fecha de aplicacion</label>
+        <input class="input2" id="fechaApi" name="fechaApi" type="date"
+              required />
+        </div>
+
+        <div>
+        <label class="label2" for="fechaVen">Fecha de vencimiento (Proxima dosis)</label>
+        <label class="label2">Es posible dejar vacio este apartado</label>
+        <input class="input2" id="fechaVen" name="fechaVen" type="date" />
+        </div>
+
+        <div>
+          <label class="label2" for="Suministradas">Suministradas</label>
+          <input class="input" id="Suministradas" name="Suministradas" type="text" 
+                 placeholder="1" required />
+        </div>
+
+      </div>
+    </div>
+        <td colspan="2"><a class="btn" href="../dashboard/recepcion.html">Registrar</a></td>
+        <div class="divider"></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const especie = localStorage.getItem('especieSeleccionada');
+  if (especie) {
+    // Oculta todos los bloques de vacunas
+    document.querySelectorAll('.vacunas').forEach(div => div.classList.add('hidden'));
+    // Muestra solo el bloque correspondiente
+        // Normaliza el nombre de la especie para los IDs
+    let especieId = especie.toLowerCase();
+    if (especieId === 'perro') especieId = 'perro';
+    else if (especieId === 'gato') especieId = 'gato';
+    else if (especieId === 'reptil') especieId = 'reptil';
+    else if (especieId === 'ave') especieId = 'ave';
+
+    const vacunasDiv = document.getElementById('vacunas-' + especie.toLowerCase());
+    if (vacunasDiv) vacunasDiv.classList.remove('hidden');
+  }
+});
+</script>
