@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Panel del Doctor — VetCare</title>
   <link rel="stylesheet" href="../../assets/css/auth.css" />
-    <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
   <style>
     .dashboard {
       max-width: 960px;
@@ -26,44 +26,51 @@
     }
   </style>
 </head>
+
 <body>
-   <header>
+  <header>
     <div class="container nav">
-      <!-- Logo a la izquierda -->
       <a class="brand" href="#inicio" aria-label="Inicio">
         <span aria-hidden="true" class="logo"></span>
         <span class="name"><b>VetCare</b><small>Hospital</small></span>
       </a>
 
-      <!-- Menú principal (centro) -->
       <nav class="menu" aria-label="Navegación principal">
         <a href="index-user.html#especialidad">Especialidad</a>
         <a href="index-user.html#doctores">Doctores</a>
         <a href="index-user.html#sobre">Sobre nosotros</a>
         <a href="index-user.html#contacto">Contacto</a>
       </nav>
-   
-      <!-- Botón de usuario con menú/mini tabla (derecha) -->
+
       <div class="user">
-        <!-- El botón es un <button> dentro de un <form> con tabindex para permitir :focus-within sin JS -->
         <button class="trigger" type="button" aria-haspopup="dialog" aria-expanded="false">
           <span class="avatar" aria-hidden="true"></span>
           <span>Cuenta</span>
           <span class="chev" aria-hidden="true">▾</span>
         </button>
-        <!-- Panel sin JS: aparece al enfocar el contenedor .user -->
+
         <div class="panel" role="dialog" aria-label="Opciones de cuenta">
-            <table class="mini-table">
-                <thead><tr><th colspan="2">Cuenta (Dueño)</th></tr></thead>
-                <tbody>
-                <tr><td>Mis mascotas</td><td><a class="btn" href="dashboard-user.html">Abrir</a></td></tr>
-                </tbody>
-                <tfoot><tr><td colspan="2"><a class="btn" href="./pages/auth/login.html">Cerrar sesión</a></td></tr></tfoot>
-            </table>
-            </div>
+          <table class="mini-table">
+            <thead>
+              <tr><th colspan="2">Cuenta (Dueño)</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mis mascotas</td>
+                <td><a class="btn" href="dashboard-user.html">Abrir</a></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"><a class="btn" href="../../pages/auth/login.html">Cerrar sesión</a></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </div>
   </header>
+
   <main class="auth-shell">
     <section class="dashboard">
       <h1>👨‍⚕️ Panel del Doctor</h1>
@@ -84,17 +91,130 @@
           <p>No tienes mensajes nuevos.</p>
         </div>
 
+        <!-- ✅ ACCIONES RÁPIDAS (AQUÍ FALTABA btnNota) -->
         <div class="card">
           <h2>Acciones rápidas</h2>
-          <button class="btn btn--primary">Agregar nota médica</button>
-          <button class="btn btn--ghost">Ver historial de pacientes</button>
+          <button id="btnNota" class="btn btn--primary" type="button">Agregar receta / nota médica</button>
+          <button class="btn btn--ghost" type="button">Ver historial de pacientes</button>
         </div>
-      </div>
 
-      <div style="margin-top:20px;text-align:center">
-      <a href="../../pages/auth/login.html" class="btn btn--link">Cerrar sesión</a>
+        <!-- ✅ FORMULARIO (sin IDs duplicados) -->
+        <div class="card" id="notaMedica" style="display:none; margin-top:20px;">
+          <h2>Nueva receta / nota médica</h2>
+
+          <label for="medicamento">Medicamento</label>
+          <select id="medicamento">
+            <option value="">Cargando medicamentos...</option>
+          </select>
+
+          <div id="medInfo" style="margin:10px 0; padding:10px; border-radius:10px; background:#0b162d;">
+            <p style="margin:0; opacity:.85;">Selecciona un medicamento para ver sus datos.</p>
+          </div>
+
+          <label for="categoria">Categoría</label>
+          <select id="categoria">
+            <option value="">Cargando categorías...</option>
+          </select>
+
+          <label for="nota">Indicaciones / Nota</label>
+          <textarea id="nota" rows="4" placeholder="Ej. 1 tableta cada 12h por 5 días"></textarea>
+
+          <button id="btnGuardar" class="btn btn--primary" type="button">Guardar</button>
+        </div>
+
+        <div style="margin-top:20px;text-align:center">
+          <a href="../../pages/auth/login.html" class="btn btn--link">Cerrar sesión</a>
+        </div>
       </div>
     </section>
   </main>
+
+  <script>
+    const API = "http://localhost:3000";
+
+    const btnNota = document.getElementById("btnNota");
+    const notaMedica = document.getElementById("notaMedica");
+
+    const selCategoria = document.getElementById("categoria");
+    const selMedicamento = document.getElementById("medicamento");
+    const medInfo = document.getElementById("medInfo");
+
+    btnNota.addEventListener("click", () => {
+      // toggle
+      notaMedica.style.display = (notaMedica.style.display === "none") ? "block" : "none";
+    });
+
+    // Cargar categorías
+    fetch(`${API}/categorias`)
+      .then(r => r.json())
+      .then(data => {
+        selCategoria.innerHTML = `<option value="">Selecciona una categoría</option>`;
+        data.forEach(cat => {
+          const opt = document.createElement("option");
+          opt.value = cat.id_cat;
+          opt.textContent = cat.nom_cat;
+          selCategoria.appendChild(opt);
+        });
+      })
+      .catch(err => {
+        console.error("Error categorías:", err);
+        selCategoria.innerHTML = `<option value="">Error cargando categorías</option>`;
+      });
+
+    // Cargar medicamentos (lista)
+    fetch(`${API}/medicamentos`)
+      .then(r => r.json())
+      .then(data => {
+        selMedicamento.innerHTML = `<option value="">Selecciona un medicamento</option>`;
+        data.forEach(m => {
+          const opt = document.createElement("option");
+          opt.value = m.id_med;
+          opt.textContent = `${m.id_med} - ${m.nom_med}`;
+          selMedicamento.appendChild(opt);
+        });
+      })
+      .catch(err => {
+        console.error("Error medicamentos:", err);
+        selMedicamento.innerHTML = `<option value="">Error cargando medicamentos</option>`;
+      });
+
+    // Al elegir medicamento -> detalle
+    selMedicamento.addEventListener("change", () => {
+      const id = selMedicamento.value;
+
+      if (!id) {
+        medInfo.innerHTML = `<p style="margin:0; opacity:.85;">Selecciona un medicamento para ver sus datos.</p>`;
+        return;
+      }
+
+      fetch(`${API}/medicamentos/${id}`)
+        .then(r => r.json())
+        .then(m => {
+          if (m.error) {
+            medInfo.innerHTML = `<p style="margin:0;">Error: ${m.error}</p>`;
+            return;
+          }
+
+          medInfo.innerHTML = `
+            <div style="display:grid; gap:6px;">
+              <div><b>Medicamento:</b> ${m.nom_med} (ID ${m.id_med})</div>
+              <div><b>Laboratorio:</b> ${m.nom_lab || "—"} (ID ${m.id_lab ?? "—"})</div>
+              <div><b>Vía:</b> ${m.nom_via || "—"} (ID ${m.id_via ?? "—"})</div>
+              <div><b>Categoría:</b> ${m.nom_cat || "—"} (ID ${m.id_cat ?? "—"})</div>
+              <div><b>Especie:</b> ${m.nom_especie || "—"} (ID ${m.id_especie ?? "—"})</div>
+            </div>
+          `;
+        })
+        .catch(err => {
+          console.error("Error detalle medicamento:", err);
+          medInfo.innerHTML = `<p style="margin:0;">Error cargando datos del medicamento</p>`;
+        });
+    });
+
+    // Guardar (demo)
+    document.getElementById("btnGuardar").addEventListener("click", () => {
+      alert("Guardado (demo). Después lo conectamos a la BD.");
+    });
+  </script>
 </body>
 </html>

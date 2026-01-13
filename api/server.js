@@ -8,7 +8,7 @@ app.use(express.json());
 
 // 👇 Conexión a Postgres (Docker)
 const pool = new Pool({
-  host: process.env.PGHOST || "db",          // si tu servicio se llama distinto, lo cambiamos
+  host: process.env.PGHOST || "db", // nombre del servicio en docker-compose
   port: Number(process.env.PGPORT || 5432),
   user: process.env.PGUSER || "vetcare_user",
   password: process.env.PGPASSWORD || "vetcare_pass",
@@ -103,12 +103,53 @@ app.get("/presentaciones", async (req, res) => {
   }
 });
 
+// --- MEDICAMENTOS (lista) ---
+// (sirve para llenar el <select>)
 app.get("/medicamentos", async (req, res) => {
   try {
     const r = await pool.query(
       "SELECT id_med, nom_med, id_lab, id_via, id_cat, id_especie FROM medicamento ORDER BY id_med"
     );
     res.json(r.rows);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// --- MEDICAMENTO (detalle por ID) ---
+// (sirve para mostrar nombres de lab/cat/via/especie con JOINs)
+app.get("/medicamentos/:id", async (req, res) => {
+  try {
+    const id = parseInt(req.params.id, 10);
+    if (Number.isNaN(id)) {
+      return res.status(400).json({ error: "ID inválido" });
+    }
+
+    const r = await pool.query(
+      `
+      SELECT
+        m.id_med,
+        m.nom_med,
+        m.id_lab, l.nom_lab,
+        m.id_via, v.nom_via,
+        m.id_cat, c.nom_cat,
+        m.id_especie, e.nom_especie
+      FROM medicamento m
+      LEFT JOIN laboratorio l ON l.id_lab = m.id_lab
+      LEFT JOIN via_administracion v ON v.id_via = m.id_via
+      LEFT JOIN categoria c ON c.id_cat = m.id_cat
+      LEFT JOIN especie e ON e.id_especie = m.id_especie
+      WHERE m.id_med = $1
+      LIMIT 1
+      `,
+      [id]
+    );
+
+    if (r.rows.length === 0) {
+      return res.status(404).json({ error: "No existe ese medicamento" });
+    }
+
+    res.json(r.rows[0]);
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
