@@ -75,166 +75,35 @@
 
 
                 <div>
-                    <label class="label2" for="especie">Especie</label>
-                    <select id="especie" name="especie" required>
-                        <option value="perro">Perro</option>
-                        <option value="gato">Gato</option>
-                        <option value="reptil">Reptil</option>
-                        <option value="ave">Ave</option>
-                    </select>
+                    <label class="label2" for="especieSelect">Especie</label>
+                    <select id="especieSelect" name="especie" required></select>
                 </div>
 
                 <label class="label2">Raza</label>
-
                 <div id="contenedor-raza">
-                    <div class="raza" id="raza-perro">
-                        <select id="select-Perro" name="raza">
-                            <option value="akita_inu">Akita Inu</option>
-                            <option value="pastor_aleman">Pastor Alemán</option>
-                            <option value="labrador_retriever">Labrador Retriever</option>
-                            <option value="bulldog_frances">Bulldog Francés</option>
-                            <option value="pug">Pug</option>
-                            <option value="chihuahua">Chihuahua</option>
-                            <option value="dalmata">Dálmata</option>
-                            <option value="husky_siberiano">Husky Siberiano</option>
-                            <option value="rottweiler">Rottweiler</option>
-                            <option value="dobermann">Dobermann</option>
-                            <option value="golden_retriever">Golden Retriever</option>
-                            <option value="pastor_belga">Pastor Belga</option>
-                            <option value="yorkshire_terrier">Yorkshire Terrier</option>
-                            <option value="shih_tzu">Shih Tzu</option>
-                            <option value="caniche">Caniche</option>
-                            <option value="samoyedo">Samoyedo</option>
-                            <option value="beagle">Beagle</option>
-                            <option value="border_collie">Border Collie</option>
-                            <option value="san_bernardo">San Bernardo</option>
-                            <option value="mastin_napolitano">Mastín Napolitano</option>
-                            <option value="mastin_napolitano">Criollo</option>
-                            <option value="NiIdea">Desconocida</option>
-                        </select>
-                    </div>
-
-                    <!--En caso de Gatos-->
-
-                    <div class="raza hidden" id="raza-gato">
-                        <select id="select-gato" name="raza">
-                            <option value="Abyssinian">Abyssinian</option>
-                            <option value="Aegean">Aegean</option>
-                            <option value="American_Bobtail">American Bobtail</option>
-                            <option value="American_Curl">American Curl</option>
-                            <option value="American_Shorthair">American Shorthair</option>
-                            <option value="American_Wirehair">American Wirehair</option>
-                            <option value="Asian">Asian</option>
-                            <option value="Australian_Mist">Australian Mist</option>
-                            <option value="Balinese">Balinese</option>
-                            <option value="Bengal">Bengal</option>
-                            <option value="Birman">Birman</option>
-                            <option value="Bombay">Bombay</option>
-                            <option value="Brazilian_Shorthair">Brazilian Shorthair</option>
-                            <option value="British_Shorthair">British Shorthair</option>
-                            <option value="British_Longhair">British Longhair</option>
-                            <option value="Burmese">Burmese</option>
-                            <option value="Burmilla">Burmilla</option>
-                            <option value="Chartreux">Chartreux</option>
-                            <option value="Chausie">Chausie</option>
-                            <option value="Colorpoint_Shorthair">Colorpoint Shorthair</option>
-                            <option value="Cornish_Rex">Cornish Rex</option>
-                            <option value="Cymric">Cymric</option>
-                            <option value="Devon_Rex">Devon Rex</option>
-                            <option value="Donskoy">Donskoy</option>
-                            <option value="Dragon_Li">Dragon Li</option>
-                            <option value="Egyptian_Mau">Egyptian Mau</option>
-                            <option value="Exotic_Shorthair">Exotic Shorthair</option>
-                            <option value="Havana_Brown">Havana Brown</option>
-                            <option value="Himalayan">Himalayan</option>
-                            <option value="Japanese_Bobtail">Japanese Bobtail</option>
-                            <option value="Javanese">Javanese</option>
-                            <option value="Khao_Manee">Khao Manee</option>
-                            <option value="Kinkalow">Kinkalow</option>
-                            <option value="Korat">Korat</option>
-                            <option value="LaPerm">LaPerm</option>
-                            <option value="Lykoi">Lykoi</option>
-                            <option value="Maine_Coon">Maine Coon</option>
-                            <option value="Manx">Manx</option>
-                            <option value="Munchkin">Munchkin</option>
-                            <option value="Nebelung">Nebelung</option>
-                            <option value="Norwegian_Forest_Cat">Norwegian Forest Cat</option>
-                            <option value="Ocicat">Ocicat</option>
-                            <option value="Oriental_Shorthair">Oriental Shorthair</option>
-                            <option value="Oriental_Longhair">Oriental Longhair</option>
-                            <option value="Oriental_Bicolor">Oriental Bicolor</option>
-                            <option value="Persian">Persian</option>
-                            <option value="Peterbald">Peterbald</option>
-                            <option value="Pixiebob">Pixiebob</option>
-                            <option value="Ragdoll">Ragdoll</option>
-                            <option value="Russian_Blue">Russian Blue</option>
-                            <option value="Savannah">Savannah</option>
-                            <option value="Scottish_Fold">Scottish Fold</option>
-                            <option value="Selkirk_Rex">Selkirk Rex</option>
-                            <option value="Siamese">Siamese</option>
-                            <option value="Siberian">Siberian</option>
-                            <option value="Singapura">Singapura</option>
-                            <option value="Snowshoe">Snowshoe</option>
-                            <option value="Sokoke">Sokoke</option>
-                            <option value="Somali">Somali</option>
-                            <option value="Sphynx">Sphynx</option>
-                            <option value="Tonkinese">Tonkinese</option>
-                            <option value="Toyger">Toyger</option>
-                            <option value="Turkish_Angora">Turkish Angora</option>
-                            <option value="Turkish_Van">Turkish Van</option>
-                            <option value="Criollo">Criollo</option>
-                            <option value="NiIdea">Desconocida</option>
-                        </select>
-                    </div>
-
-                    <!--en caso de reptiles-->
-                    <div class="raza hidden" id="raza-reptil">
-                        <select id="select-reptil" name="raza">
-                            <option value="Dragon_Bearded">Dragón Barbudo</option>
-                            <option value="Python_Bola">Pitón Bola</option>
-                            <option value="Gecko_Leopardo">Gecko Leopardo</option>
-                            <option value="Serpiente_de_Maiz">Serpiente del Maíz</option>
-                            <option value="Escinco_Lengua_Azul">Escinco de Lengua Azul</option>
-                            <option value="Tortuga_de_Orejas_Rojas">Tortuga de Orejas Rojas</option>
-                            <option value="Tortuga_Rusa">Tortuga Rusa</option>
-                            <option value="Tortuga_Sulcata">Tortuga Espolón Africana (Sulcata)</option>
-                            <option value="Anolis_Verde">Anolis Verde</option>
-                            <option value="Gecko_Crestado">Gecko Crestado</option>
-                            <option value="Boa_Constricctor">Boa Constrictora</option>
-                            <option value="Iguana_Verde">Iguana Verde</option>
-                            <option value="Serpiente_Cascabel">Serpiente de Cascabel</option>
-                            <option value="Varano_Acuatico">Varano Acuático</option>
-                            <option value="Tortuga_del_Desierto">Tortuga del Desierto</option>
-                            <option value="NiIdea">Desconocida</option>
-                        </select>
-                    </div>
-
-                    <!--en caso de aves-->
-                    <div class="raza hidden" id="raza-ave">
-                        <select id="select-ave" name="raza" required>
-                            <option value="Periquito_Australiano">Periquito Australiano</option>
-                            <option value="Canario">Canario</option>
-                            <option value="Diamante_Mandarín">Diamante Mandarín</option>
-                            <option value="Agapornis">Agapornis (Inseparables)</option>
-                            <option value="Cacatúa">Cacatúa</option>
-                            <option value="Guacamayo">Guacamayo</option>
-                            <option value="Loro_Amazonico">Loro amazónico</option>
-                            <option value="Ninfa_Carolina">Ninfa (Carolina o Cockatiel)</option>
-                            <option value="Periquito_Monk">Cotorra Monje (Quaker Parrot)</option>
-                            <option value="Tucán">Tucán</option>
-                            <option value="Pinzón_Cebra">Pinzón Cebra</option>
-                            <option value="Loro_Gris_Africano">Loro Gris Africano</option>
-                            <option value="Gallina_Sedas">Gallina Sedosa (Silkie)</option>
-                            <option value="Gallina_Plymouth">Gallina Plymouth Rock</option>
-                            <option value="Gallina_Leghorn">Gallina Leghorn</option>
-                            <option value="Pato_Pekin">Pato Pekín</option>
-                            <option value="Pato_Mudo">Pato Mudo (Muscovy)</option>
-                            <option value="Pavo_Real">Pavo Real</option>
-                            <option value="Pavo_Domestico">Pavo Doméstico</option>
-                            <option value="Ganso_Emden">Ganso Emden</option>
-                        </select>
-                    </div>
+                    <select id="razaSelect" name="raza" required></select>
                 </div>
+
+
+                <!--En caso de Gatos-->
+
+                <!-- <div class="raza hidden" id="raza-gato">
+                        <select id="razaSelect" name="raza" required></select>
+                        </select>
+                    </div> -->
+
+                <!--en caso de reptiles-->
+                <!-- <div class="raza hidden" id="raza-reptil">
+                        <select id="razaSelect" name="raza" required></select>
+                        </select>
+                    </div> -->
+
+                <!--en caso de aves-->
+                <!-- <div class="raza hidden" id="raza-ave">
+                        <select id="razaSelect" name="raza" required></select>
+                        </select>
+                    </div>
+                </div> -->
 
 
                 <div>
@@ -469,6 +338,48 @@
     </main>
     <!-- register-pet.html, antes de </body> -->
     <script src="../../assets/css/pet1.js"></script>
+    <script>
+        const API = "http://localhost:3000";
+
+        const especieSel = document.getElementById("especieSelect");
+        const razaSel = document.getElementById("razaSelect");
+
+        async function cargarEspecies() {
+            const res = await fetch(`${API}/especies`);
+            const data = await res.json();
+
+            especieSel.innerHTML = data
+                .map(e => `<option value="${e.id_especie}">${e.nom_especie}</option>`)
+                .join("");
+
+            if (data.length) {
+                cargarRazas(data[0].id_especie);
+            }
+        }
+
+        async function cargarRazas(idEspecie) {
+            razaSel.innerHTML = `<option value="">Cargando...</option>`;
+
+            const res = await fetch(`${API}/razas?especie=${idEspecie}`);
+            const data = await res.json();
+
+            if (!data.length) {
+                razaSel.innerHTML = `<option value="">(Sin razas)</option>`;
+                return;
+            }
+
+            razaSel.innerHTML = data
+                .map(r => `<option value="${r.id_raza}">${r.nom_raza}</option>`)
+                .join("");
+        }
+
+        especieSel.addEventListener("change", e => {
+            cargarRazas(e.target.value);
+        });
+
+        cargarEspecies();
+    </script>
+
 </body>
 
 </html>

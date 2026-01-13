@@ -47,6 +47,30 @@ app.get("/especies", async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
+// --- RAZAS ---
+// Devuelve todas las razas o filtradas por especie: /razas?especie=1
+app.get("/razas", async (req, res) => {
+  try {
+    const { especie } = req.query;
+
+    let sql = "SELECT id_raza, nom_raza, id_especie FROM raza";
+    const params = [];
+
+    if (especie) {
+      sql += " WHERE id_especie = $1";
+      params.push(Number(especie));
+    }
+
+    sql += " ORDER BY nom_raza";
+    const r = await pool.query(sql, params);
+    res.json(r.rows);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+
+
 
 app.get("/paises", async (req, res) => {
   try {
